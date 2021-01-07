@@ -1,0 +1,659 @@
+.jobOpenings {
+  background-color: #edf3f3;
+  min-height: 100vh;
+  padding-bottom: 3%;
+}
+
+.jobOpenings__header {
+  background-color: #fff;
+  height: 80px;
+  margin-top: 10px;
+}
+
+.jobOpenings__container {
+  position: relative;
+  margin: 0 auto;
+  margin-top: 5%;
+  width: 90%;
+  max-width: 838px;
+  /* max-width: 1000px; */
+  min-height: 100%;
+  padding: 0.9375rem;
+
+  /* border: 1px solid lightgray; */
+  border-radius: 0.3125rem;
+  border: 1px solid #d6dae0;
+  background: #fff;
+  -webkit-transition: all 125ms cubic-bezier(0.25, 0.1, 0.25, 1);
+  transition: all 125ms cubic-bezier(0.25, 0.1, 0.25, 1);
+
+  margin-bottom: 0.9375rem;
+
+  overflow: hidden;
+}
+
+.jobOpenings__container > h4 {
+  font-size: 0.8125rem;
+  line-height: 1.125rem;
+  text-transform: uppercase;
+  color: #788699;
+  font-weight: 500;
+  margin: 0;
+  margin-bottom: 0.9375rem;
+}
+
+/* .loadmore {
+  border-top: 1px solid #d6dae0;
+  height: 56px;
+  margin: -15px;
+
+  color: #201e27;
+  -webkit-transition: all 125ms cubic-bezier(0.25, 0.1, 0.25, 1);
+  transition: all 125ms cubic-bezier(0.25, 0.1, 0.25, 1);
+  height: 100%;
+  width: auto;
+  border-radius: 0;
+  position: relative;
+  cursor: pointer;
+  color: #201e27;
+  border-color: #d6dae0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 0.375rem 0.75rem;
+  border-radius: 0.3125rem;
+  font-weight: 600;
+  font-size: 0.875rem;
+  height: 2.5rem;
+  -webkit-transition: all 125ms cubic-bezier(0.25, 0.1, 0.25, 1);
+  transition: all 125ms cubic-bezier(0.25, 0.1, 0.25, 1);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+} */
+
+.jobOpenings__card {
+  display: flex;
+
+  flex-direction: column;
+
+  overflow: hidden;
+  border-radius: 0.4525rem;
+  border: 1px solid #d6dae0;
+  background: #fff;
+
+  /* height: 180px; */
+  height: 160px;
+  cursor: pointer;
+
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: -webkit-box-shadow 125ms cubic-bezier(0.25, 0.1, 0.25, 1);
+  transition: -webkit-box-shadow 125ms cubic-bezier(0.25, 0.1, 0.25, 1);
+  transition: box-shadow 125ms cubic-bezier(0.25, 0.1, 0.25, 1);
+  transition: box-shadow 125ms cubic-bezier(0.25, 0.1, 0.25, 1),
+    -webkit-box-shadow 125ms cubic-bezier(0.25, 0.1, 0.25, 1);
+
+  overflow: hidden;
+  border-radius: 0.3125rem;
+  border: 1px solid #d6dae0;
+  background: #fff;
+  -webkit-transition: all 125ms cubic-bezier(0.25, 0.1, 0.25, 1);
+  transition: all 125ms cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.jobOpenings__card:hover {
+  box-shadow: 0px 3px 3px 1px rgba(0, 0, 0, 0.1);
+}
+
+.card__section {
+  display: grid;
+  grid-gap: 1rem;
+  margin-bottom: 30px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+@media (min-width: 600px) {
+  .card__section {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 900px) {
+  .card__section {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.jobOpenings__info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  padding: 0.9375rem;
+  /* border-bottom: 1px solid #d6dae0; */
+  flex-grow: 1;
+}
+
+.jobOpenings__banner {
+  margin-bottom: 7px;
+}
+
+.jobOpenings__infoTitle {
+  font-size: 1rem;
+  line-height: 1.375rem;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.jobOpenings__header {
+  /* margin-bottom: 8px; */
+  margin-bottom: 18px;
+}
+
+.jobOpenings__image {
+  /* background: url("https://images.jumpstart.me/frontend/icons/company_logo_default.svg"); */
+
+  background-size: contain;
+  background-size: cover;
+  border-radius: 0.25rem;
+  height: 3.625rem;
+  width: 3.625rem;
+  min-height: 3.625rem;
+  min-width: 3.625rem;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  margin-bottom: 10px;
+}
+
+.application {
+  color: #788699;
+  -webkit-transition: opacity 125ms cubic-bezier(0.25, 0.1, 0.25, 1);
+  transition: opacity 125ms cubic-bezier(0.25, 0.1, 0.25, 1);
+  opacity: 0;
+}
+
+.jobOpenings__infoTitle > h5 {
+  margin-bottom: 0.3125rem;
+  font-size: 1rem;
+  line-height: 1.375rem;
+  font-weight: 00;
+  color: #201e27;
+  width: 10%;
+  font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Ubuntu,
+    Cantarell, Noto Sans, sans-serif, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    sans-serif;
+}
+
+.type {
+  /* margin-bottom: 0.5rem; */
+  font-size: 0.875rem;
+  line-height: 1rem;
+  font-weight: 400;
+  color: #201e27;
+  font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Ubuntu,
+    Cantarell, Noto Sans, sans-serif, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    sans-serif;
+}
+
+.type > span {
+  font-size: 0.75rem;
+  color: #788699;
+  line-height: 1rem;
+  font-weight: 400;
+  font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Ubuntu,
+    Cantarell, Noto Sans, sans-serif, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    sans-serif;
+}
+
+/* .jobOpenings__location {
+  display: -webkit-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  word-break: break-word;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+} */
+
+.jobOpenings__actions {
+  /* display: flex;
+  align-items: center;
+
+  padding: 0 0.5rem 0.8375rem; */
+  /* border-top: 1px solid #d6dae0; */
+
+  /* display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start; */
+}
+
+.learnbtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 0.375rem 0.75rem;
+  border-radius: 0.3125rem;
+  font-weight: 600;
+  font-size: 0.875rem;
+  height: 1.5rem;
+  -webkit-transition: all 125ms cubic-bezier(0.25, 0.1, 0.25, 1);
+  transition: all 125ms cubic-bezier(0.25, 0.1, 0.25, 1);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  background: #fff;
+  color: #01a3a4;
+  border: 1px solid #01a3a4;
+  -webkit-transition: color 0s;
+  transition: color 0s;
+  position: relative;
+  right: -135px;
+}
+
+/* .savebtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 0.375rem 0.75rem;
+  border-radius: 0.3125rem;
+  font-weight: 600;
+  font-size: 0.875rem;
+  height: 1.5rem;
+  -webkit-transition: all 125ms cubic-bezier(0.25, 0.1, 0.25, 1);
+  transition: all 125ms cubic-bezier(0.25, 0.1, 0.25, 1);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #201e27;
+  border-color: #fff;
+  border: 1px solid #d6dae0;
+}
+
+.savebtn:hover {
+  background-color: rgb(253, 248, 242);
+  color: #201e27;
+  cursor: pointer;
+} */
+
+.learnbtn:hover {
+  background-color: #01a3a4;
+  color: white;
+  cursor: pointer;
+}
+
+/* @media only screen and (min-width: 1900px) {
+  .jobOpenings {
+    padding-bottom: 10%;
+  }
+  .jobOpenings__container {
+    padding: 1.6rem;
+  }
+  .jobOpenings__container > h4 {
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .jobOpenings__card {
+    padding: 0.3rem;
+    height: 180px;
+  }
+  .jobOpenings__image {
+    width: 4.2rem;
+    height: 4.2rem;
+    margin-bottom: 13px;
+  }
+  .jobOpenings__infoTitle {
+    font-size: 21px;
+    margin-bottom: 8px;
+  }
+  .type {
+    font-size: 17px;
+    font-weight: 500;
+  }
+  .type > span {
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 1px;
+  }
+  .loadmore {
+    font-size: 20px;
+    letter-spacing: 1px;
+  }
+} */
+
+@media only screen and (max-width: 330px) {
+  .jobOpenings__container {
+    /* margin: 3%; */
+  }
+
+  .jobOpenings__card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    -webkit-transition: -webkit-box-shadow 125ms
+      cubic-bezier(0.25, 0.1, 0.25, 1);
+    transition: -webkit-box-shadow 125ms cubic-bezier(0.25, 0.1, 0.25, 1);
+    transition: box-shadow 125ms cubic-bezier(0.25, 0.1, 0.25, 1);
+    transition: box-shadow 125ms cubic-bezier(0.25, 0.1, 0.25, 1),
+      -webkit-box-shadow 125ms cubic-bezier(0.25, 0.1, 0.25, 1);
+
+    border-radius: 0.3125rem;
+    border: 1px solid #d6dae0;
+    background: #fff;
+    -webkit-transition: all 125ms cubic-bezier(0.25, 0.1, 0.25, 1);
+    transition: all 125ms cubic-bezier(0.25, 0.1, 0.25, 1);
+    /* width: 100%; */
+    margin: 0;
+    height: 170px;
+  }
+  .learnbtn {
+    position: relative;
+    top: 10px;
+    right: -130px;
+  }
+}
+
+@media only screen and (max-width: 400px) and (min-width: 340px) {
+  .jobOpenings__container {
+    /* margin: 3%; */
+  }
+  .jobOpenings__card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    -webkit-transition: -webkit-box-shadow 125ms
+      cubic-bezier(0.25, 0.1, 0.25, 1);
+    transition: -webkit-box-shadow 125ms cubic-bezier(0.25, 0.1, 0.25, 1);
+    transition: box-shadow 125ms cubic-bezier(0.25, 0.1, 0.25, 1);
+    transition: box-shadow 125ms cubic-bezier(0.25, 0.1, 0.25, 1),
+      -webkit-box-shadow 125ms cubic-bezier(0.25, 0.1, 0.25, 1);
+    height: 150px;
+  }
+  .learnbtn {
+    position: relative;
+    top: 10px;
+    left: 175px;
+  }
+}
+
+@media only screen and (max-width: 500px) and (min-width: 400px) {
+  .jobOpenings__container {
+    /* margin: 3%; */
+  }
+
+  .jobOpenings__card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    -webkit-transition: -webkit-box-shadow 125ms
+      cubic-bezier(0.25, 0.1, 0.25, 1);
+    transition: -webkit-box-shadow 125ms cubic-bezier(0.25, 0.1, 0.25, 1);
+    transition: box-shadow 125ms cubic-bezier(0.25, 0.1, 0.25, 1);
+    transition: box-shadow 125ms cubic-bezier(0.25, 0.1, 0.25, 1),
+      -webkit-box-shadow 125ms cubic-bezier(0.25, 0.1, 0.25, 1);
+
+    border-radius: 0.3125rem;
+    border: 1px solid #d6dae0;
+    background: #fff;
+    -webkit-transition: all 125ms cubic-bezier(0.25, 0.1, 0.25, 1);
+    transition: all 125ms cubic-bezier(0.25, 0.1, 0.25, 1);
+    /* width: 100%; */
+    height: 150px;
+    margin: 0;
+  }
+  .learnbtn {
+    position: relative;
+    top: 10px;
+    left: 200px;
+  }
+}
+
+@media only screen and (max-width: 600px) and (min-width: 501px) {
+  .jobOpenings__container {
+    margin: 3%;
+  }
+
+  .jobOpenings__card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    -webkit-transition: -webkit-box-shadow 125ms
+      cubic-bezier(0.25, 0.1, 0.25, 1);
+    transition: -webkit-box-shadow 125ms cubic-bezier(0.25, 0.1, 0.25, 1);
+    transition: box-shadow 125ms cubic-bezier(0.25, 0.1, 0.25, 1);
+    transition: box-shadow 125ms cubic-bezier(0.25, 0.1, 0.25, 1),
+      -webkit-box-shadow 125ms cubic-bezier(0.25, 0.1, 0.25, 1);
+
+    border-radius: 0.3125rem;
+    border: 1px solid #d6dae0;
+    background: #fff;
+    -webkit-transition: all 125ms cubic-bezier(0.25, 0.1, 0.25, 1);
+    transition: all 125ms cubic-bezier(0.25, 0.1, 0.25, 1);
+    /* width: 100%; */
+    height: 170px;
+    margin: 0;
+  }
+  .learnbtn {
+    position: relative;
+    top: 10px;
+    right: -80px;
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 601px) {
+  .jobOpenings__card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    -webkit-transition: -webkit-box-shadow 125ms
+      cubic-bezier(0.25, 0.1, 0.25, 1);
+    transition: -webkit-box-shadow 125ms cubic-bezier(0.25, 0.1, 0.25, 1);
+    transition: box-shadow 125ms cubic-bezier(0.25, 0.1, 0.25, 1);
+    transition: box-shadow 125ms cubic-bezier(0.25, 0.1, 0.25, 1),
+      -webkit-box-shadow 125ms cubic-bezier(0.25, 0.1, 0.25, 1);
+
+    border-radius: 0.3125rem;
+    border: 1px solid #d6dae0;
+    background: #fff;
+    -webkit-transition: all 125ms cubic-bezier(0.25, 0.1, 0.25, 1);
+    transition: all 125ms cubic-bezier(0.25, 0.1, 0.25, 1);
+    /* width: 100%; */
+    height: 170px;
+    margin: 0;
+  }
+  .learnbtn {
+    position: relative;
+    top: 10px;
+    left: 140px;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 770px) {
+  .jobOpenings__card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    -webkit-transition: -webkit-box-shadow 125ms
+      cubic-bezier(0.25, 0.1, 0.25, 1);
+    transition: -webkit-box-shadow 125ms cubic-bezier(0.25, 0.1, 0.25, 1);
+    transition: box-shadow 125ms cubic-bezier(0.25, 0.1, 0.25, 1);
+    transition: box-shadow 125ms cubic-bezier(0.25, 0.1, 0.25, 1),
+      -webkit-box-shadow 125ms cubic-bezier(0.25, 0.1, 0.25, 1);
+
+    border-radius: 0.3125rem;
+    border: 1px solid #d6dae0;
+    background: #fff;
+    -webkit-transition: all 125ms cubic-bezier(0.25, 0.1, 0.25, 1);
+    transition: all 125ms cubic-bezier(0.25, 0.1, 0.25, 1);
+    /* width: 100%; */
+    height: 170px;
+    margin: 0;
+  }
+  .learnbtn {
+    position: relative;
+    top: 10px;
+    left: 115px;
+  }
+}
+
+/* @media only screen and (max-width: 1500px) and (min-width: 1024px) {
+  .jobOpenings__card {
+    display: flex;
+
+    flex-direction: column;
+
+    overflow: hidden;
+    border-radius: 0.4525rem;
+    border: 1px solid #d6dae0;
+    background: #fff;
+
+    height: 163px;
+    cursor: pointer;
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    -webkit-transition: -webkit-box-shadow 125ms
+      cubic-bezier(0.25, 0.1, 0.25, 1);
+    transition: -webkit-box-shadow 125ms cubic-bezier(0.25, 0.1, 0.25, 1);
+    transition: box-shadow 125ms cubic-bezier(0.25, 0.1, 0.25, 1);
+    transition: box-shadow 125ms cubic-bezier(0.25, 0.1, 0.25, 1),
+      -webkit-box-shadow 125ms cubic-bezier(0.25, 0.1, 0.25, 1);
+
+    overflow: hidden;
+    border-radius: 0.3125rem;
+    border: 1px solid #d6dae0;
+    background: #fff;
+    -webkit-transition: all 125ms cubic-bezier(0.25, 0.1, 0.25, 1);
+    transition: all 125ms cubic-bezier(0.25, 0.1, 0.25, 1);
+  }
+  .jobOpenings {
+    padding-bottom: 3%;
+  }
+  .jobOpenings__container {
+    padding: 0.9375rem;
+  }
+  .jobOpenings__container > h4 {
+    font-size: 0.8125rem;
+    line-height: 1.125rem;
+    text-transform: uppercase;
+    color: #788699;
+    font-weight: 500;
+    margin: 0;
+    margin-bottom: 0.9375rem;
+  }
+
+  .jobOpenings__image {
+    height: 3.625rem;
+    width: 3.625rem;
+    margin-bottom: 10px;
+  }
+  .jobOpenings__infoTitle {
+    font-size: 1rem;
+    line-height: 1.375rem;
+    font-weight: 500;
+    margin-bottom: 5px;
+  }
+  .type {
+    font-size: 0.875rem;
+    line-height: 1rem;
+    font-weight: 400;
+    color: #201e27;
+    font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Ubuntu,
+      Cantarell, Noto Sans, sans-serif, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+      sans-serif;
+  }
+
+  .type > span {
+    font-size: 0.75rem;
+    color: #788699;
+    line-height: 1rem;
+    font-weight: 400;
+    font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Ubuntu,
+      Cantarell, Noto Sans, sans-serif, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+      sans-serif;
+  }
+} */

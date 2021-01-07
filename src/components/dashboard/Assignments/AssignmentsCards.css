@@ -1,0 +1,84 @@
+.assignmentCards {
+    position: relative;
+    background-color: #fff;
+    cursor: pointer;
+    width: 220px;
+    height: 130px;
+    overflow: hidden;
+    box-shadow: 0px 2px 8px rgba(0,0,0,0.08);
+    color: #033443;
+    border: 1px solid #EBECEE;
+    border-radius: 16px;
+    letter-spacing: normal;
+    transition: all 0.2s ease-out;
+}
+
+.assignmentCards > img {
+    position: absolute;
+    object-fit: contain;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.assignmentCards:hover {
+    transform: scale(1.06);
+}
+
+.assignmentCards > h4 {
+    font-size: .875rem;
+    line-height: 1.25rem;
+    font-weight: 600;
+    margin-top: 100px;
+    margin-left: 15px;
+}
+
+/* SKELETON */
+.assignmentCards__skeleton {
+    position: relative;
+    background-color: #fff;
+    cursor: pointer;
+    width: 220px;
+    height: 130px;
+    overflow: hidden;
+    box-shadow: 0px 2px 8px rgba(0,0,0,0.08);
+    color: #033443;
+    border: 1px solid #EBECEE;
+    border-radius: 16px;
+    letter-spacing: normal;
+    transition: all 0.2s ease-out;
+    padding: 10px;
+    /* padding-top: 10px;
+    padding-left: 10px; */
+}
+
+.cardSkeleton_logo {
+    margin-bottom: 10px;
+}
+
+/* .cardSkeleton_info {
+    margin-left: 5%;
+    margin-right: 5%;
+} */
+
+@media(max-width: 414px) {
+    .assignmentCards {
+        width: 280px;
+        height: 160px;
+    }
+
+    .assignmentCards > h4 {
+        margin-top: 125px;
+    }
+}
+
+@media(max-width: 280px) {
+    .assignmentCards {
+        width: 245px;
+        height: 150px;
+    }
+
+    .assignmentCards > h4 {
+        margin-top: 115px;
+    }
+}

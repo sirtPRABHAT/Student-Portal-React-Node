@@ -1,0 +1,566 @@
+.newProfile {
+    background-color: #f8f8f8;
+    min-height: 100vh;
+    padding-top: 64px;
+    padding-bottom: 20px;
+}
+
+.newProfile__container {
+    color: #033443;
+    display: flex;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+input, button, textarea, select, option {
+    font-family: "Inter", sans-serif !important;
+}
+
+.btn {
+    outline: none;
+    border: none;
+    padding: 10px 15px;
+    font-weight: 600;
+    background-color: #01a3a4;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#file {
+    display: none;
+}
+
+/* EXPERIENCE CARD */
+
+.experiences__card > div {
+    position: relative;
+    display: flex;
+    margin-bottom: 22px;
+}
+
+.experiences__card > div:last-of-type {
+    margin-bottom: 0px;
+}
+
+.experiences__card > div > img{
+    height: 60px;
+    width: 60px;
+    object-fit: contain;
+    border-radius: 3px;
+    margin-right: 1.25rem;
+}
+
+.experiences__card > div > div > h2 {
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 150%;
+    margin: 0;
+    color: #355761;
+}
+
+.experiences__card > div > div > h3, .experiences__card > div > div > h4, .experiences__card > div > div > p {
+    font-size: .875rem;
+    line-height: 150%;
+    margin: 0;
+    font-weight: normal;
+    color: #597780;
+}
+
+.experiences__card > div > div > h4 {
+    opacity: 0.7;
+}
+
+.experiences__card > div > div > p {
+    margin-top: .5rem;
+}
+
+.experiences__card > div:hover .hide {
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0s linear 0s, opacity 300ms;
+}
+
+.experiences__card > div > .MuiSvgIcon-root {
+    position: absolute;
+    right: 0;
+    color: #aaa !important;
+    cursor: pointer;
+    font-size: 25px !important;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s linear 300ms, opacity 300ms;
+}
+
+.experiences__card > button {
+    position: absolute;
+    top: 26px;
+    right: 20px;
+    color: #62d5bc;
+    font-size: .85rem;
+    font-weight: 600;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.newProfile__left, .newProfile__right {
+    border-radius: 3px;
+    height: fit-content !important;
+}
+
+.newProfile__left {
+    min-width: 658px;
+}
+
+.newProfile__right {
+    margin-left: 20px;
+    max-width: 309px;
+}
+
+.newProfile__right__elsewhere {
+    padding: 1.5rem;
+    margin-top: 24px;
+    border: 1.5px solid #d9d9d9;
+    border-radius: 9px;
+    background-color: #fff;
+}
+
+.newProfile__userBio, .newProfile__experience, .newProfile__resume, .newProfile__education {
+    background-color: #fff;
+    padding: 1.5rem 2rem;
+    border: 1.5px solid #d9d9d9;
+    border-radius: 9px;
+    margin-bottom: 15px;
+    width: 589px;
+}
+
+.newProfile__userBio > div{
+    display: flex;
+    align-items: flex-start;
+}
+
+.newProfile__userBio .MuiAvatar-root {
+    background-color: #c0f2ef;
+    color: #25b2aa;
+    height: 4.6875rem;
+    width: 4.6875rem;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.newProfile__userBio__info > h4 {
+    color: #555;
+    margin-top: 3px;
+    margin-bottom: 1px;
+    font-weight: 600;
+    font-size: .95rem;
+    line-height: 150%;
+}
+
+.newProfile__userBio__info > h5 {
+    margin: 0;
+    font-size: .875rem;
+    font-weight: 500;
+    color: #3e5963;
+    line-height: 1.25rem;
+}
+
+.newProfile__userBio__info > p {
+    color: #aaa;
+    font-size: .8rem;
+    line-height: 1.25rem;
+    font-weight: 500;
+    margin-top: 2px;
+    margin-bottom: 3px;
+}
+
+.newProfile__userBio_description {
+    color: #777;
+    margin-bottom: 0px;
+    font-size: .875rem;
+    font-weight: 500;
+    line-height: 1.2rem;
+}
+
+/* COMMON OF exp, edu and resume HEADING*/
+.newProfile__experience > h1, .newProfile__education > h1, .newProfile__resume > h1 {
+    margin-top: 0px;
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+    line-height: 1.375rem;
+    font-weight: 500;
+}
+
+.newProfile__experience {
+    position: relative;
+    background: #fff url('../../images/newProfile/exp-bg.svg') no-repeat center;
+    background-size: cover;
+    min-height: max-content;
+}
+
+.newProfile__experience__bg, .newProfile__resume > div {
+    text-align: center;
+}
+
+.newProfile__experience__bg > h3, .newProfile__resume > div > h3 {
+    margin: 0;
+    margin-top: 8.5rem;
+    font-weight: 500;
+}
+
+.newProfile__experience__bg > p, .newProfile__resume > div > p {
+    margin: .5rem 0;
+    font-size: .875rem;
+    margin-bottom: 1rem;
+    opacity: 0.95;
+}
+
+.newProfile__resume {
+    position: relative;
+    background: #fff url('../../images/newProfile/resume.svg') no-repeat center 20px;
+    background-size: 25%;
+    height: max-content;
+}
+
+.newProfile__resume > div > h3 {
+    margin-top: 6.4rem;
+}
+
+.newProfile__education > div {
+    display: flex;
+    align-items: flex-start;
+}
+
+.newProfile__resume__selected {
+    /* display: flex; */
+    margin: auto;
+    width: 70%;
+}
+
+.newProfile__resume__selected > img {
+    width: 60px;
+    margin-right: 15px;
+}
+
+.newProfile__resume__selected > div > h3 {
+    margin: 3px 0;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.newProfile__resume__selected > div > p {
+    margin: 0px;
+    opacity: 0.85;
+    font-weight: 400;
+}
+
+.newProfile__resume__selected__icons {
+    position: absolute;
+    top: 1.5rem;
+    right: 1rem;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s linear 300ms, opacity 300ms;
+}
+
+.newProfile__resume__selected__icons .MuiSvgIcon-root {
+    color: #aaa !important;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+}
+
+.newProfile__resume__selected__icons .MuiSvgIcon-root:first-child {
+    margin-right: 15px;
+    color: #666 !important;
+}
+
+.newProfile__resume:hover .newProfile__resume__selected__icons{
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0s linear 0s, opacity 300ms;
+}
+
+.newProfile__education > div > .MuiSvgIcon-root {
+    background-color: #bac1ca !important;
+    color: #fff !important;
+    padding: 15px;
+    margin-right: 20px;
+    border-radius: 50px;
+    height: 2rem;
+    width: 2rem;
+}
+
+.newProfile__education__info > h4 {
+    margin-top: 0px;
+    color: #4d6369;
+    margin-bottom: 0px;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 150%;
+}
+
+.newProfile__education__info > p, .newProfile__education__info > span {
+    margin: 0px;
+    font-size: .875rem;
+    line-height: 150%;
+    color: #788699
+}
+
+.newProfile__education__info > p {
+    font-weight: 500;
+}
+
+.newProfile__preference {
+    padding: 1.5rem;
+    border: 1.5px solid #d9d9d9;
+    border-radius: 9px;
+    background-color: #fff;
+}
+
+.newProfile__role > h2, .newProfile__exp > h2, .newProfile__skill > h2, .newProfile__loc > h2,
+.newProfile__right__elsewhere > h1 {
+    margin: 0;
+    font-size: .875rem;
+    line-height: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+
+.newProfile__role:hover .hide, .newProfile__exp:hover .hide, .newProfile__skill:hover .hide, .newProfile__loc:hover .hide,
+.newProfile__right__elsewhere:hover .hide {
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0s linear 0s, opacity 300ms;
+}
+
+.newProfile__role > h2, .newProfile__exp > h2, .newProfile__skill > h2, .newProfile__loc > h2,
+.newProfile__right__elsewhere > h1 {
+    margin-bottom: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+.newProfile__role > h2 > .MuiSvgIcon-root, .newProfile__exp > h2 > .MuiSvgIcon-root,
+.newProfile__skill > h2 > .MuiSvgIcon-root, .newProfile__loc > h2 > .MuiSvgIcon-root,
+.newProfile__right__elsewhere > h1 > .MuiSvgIcon-root {
+    color: #aaa !important;
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s linear 300ms, opacity 300ms;
+}
+
+.newProfile__role > p, .newProfile__exp > p, .newProfile__skill > p, .newProfile__loc > p {
+    color: #788699;
+    margin: 0px;
+    margin-bottom: 15px;
+    font-size: .85rem;
+    line-height: 1.25rem;
+    font-weight: 400;
+}
+
+.newProfile__role > div, .newProfile__exp > div, .newProfile__skill > div, .newProfile__loc > div {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.newProfile__role > div > p, .newProfile__exp > div > p, .newProfile__skill > div > p, .newProfile__loc > div > p {
+    margin: 0;
+    padding: .25rem .5rem;
+    background-color: #eff2f6;
+    margin-right: .5rem;
+    margin-top: .5rem;
+    border-radius: 5px;
+    font-size: .75rem;
+    line-height: 1rem;
+    font-weight: 400;
+}
+
+.newProfile__loc > p {
+    margin-bottom: 0px;
+}
+
+.newProfile__right__elsewhere:hover .hide {
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0s linear 0s, opacity 300ms;
+}
+
+.newProfile__right__elsewhere > p {
+    display: flex;
+    align-items: center;
+    color: #788699;
+    font-size: .875rem;
+    line-height: 1.25rem;
+    font-weight: 400;
+}
+
+.newProfile__right__elsewhere > p:last-child {
+    margin-bottom: 0px;
+}
+
+.newProfile__right__elsewhere > p > img {
+    height: 1.875rem;
+    width: 1.875rem;
+    margin-right: 10px;
+}
+
+.newProfile__right__elsewhere > p > a {
+    transition: all 0.2s ease-in;
+    max-width: 90%;
+    overflow: hidden;
+}
+
+.newProfile__right__elsewhere > p > a:hover {
+    color: #25b2aa;
+}
+
+@media(max-width: 1024px) {
+    .newProfile {
+        padding-top: 15px;
+    }
+
+    .newProfile__container {
+        margin: auto;
+        max-width: max-content;
+    }
+
+    .newProfile__role > h2 > .MuiSvgIcon-root, .newProfile__exp > h2 > .MuiSvgIcon-root,
+    .newProfile__skill > h2 > .MuiSvgIcon-root, .newProfile__loc > h2 > .MuiSvgIcon-root,
+    .newProfile__right__elsewhere > h1 > .MuiSvgIcon-root,
+    .experiences__card > div > .MuiSvgIcon-root,
+    .newProfile__resume__selected__icons {    
+        visibility: visible;
+        opacity: 1;
+        transition: visibility 0s linear 0s, opacity 300ms;
+    }
+}
+
+@media(max-width: 768px) {
+    .newProfile__container {
+        display: block;
+    }
+
+    .newProfile__right {
+        margin: 0px;
+        max-width: none;
+    }
+
+    .newProfile__right__elsewhere, .newProfile__preference {
+        width: 606px;
+        margin-top: 15px;
+    }
+
+    .newProfile__userBio__info > h4 {
+        font-size: 1.2rem;
+        margin-top: 0;
+    }
+
+    .newProfile__userBio__info > h5 {
+        font-size: 1.1rem;
+        margin: 5px 0;
+    }
+
+    .newProfile__userBio__info > p {
+        font-size: .95rem;
+        color: gray;
+        margin-top: 3px;
+        margin-bottom: 5px;
+    }
+
+    .newProfile__userBio_description {
+        font-size: .95rem;
+        line-height: 140%;
+    }
+
+    .newProfile__experience__bg > h3, .newProfile__resume > div > h3 {
+        font-size: 1.3rem;
+    }
+
+    .newProfile__experience__bg > p, .newProfile__resume > div > p {
+        font-size: 1rem;
+    }
+
+    .experiences__card > div > div > h2 {
+        font-size: 1.1rem;
+    }
+
+    .experiences__card > div > div > h3, .experiences__card > div > div > h4, 
+    .experiences__card > div > div > p {
+        font-size: 1rem;
+    }
+
+    .experiences__card > div > div > h4 {
+        opacity: 0.9;
+    }
+
+    .newProfile__role > h2, .newProfile__exp > h2, 
+    .newProfile__skill > h2, .newProfile__loc > h2, 
+    .newProfile__right__elsewhere > h1 {
+        font-size: 1rem;
+    }
+
+    .newProfile__role > p, .newProfile__exp > p, .newProfile__skill > p, .newProfile__loc > p {
+        font-size: .95rem;
+    }
+
+    .newProfile__role > div > p, .newProfile__exp > div > p, 
+    .newProfile__skill > div > p, .newProfile__loc > div > p {
+        font-size: .9rem;
+    }
+
+    .newProfile__right__elsewhere > p {
+        font-size: .95rem;
+    }
+}
+
+@media(max-width: 540px) {
+    .newProfile__userBio, .newProfile__experience, .newProfile__resume, .newProfile__education, 
+    .newProfile__right__elsewhere, .newProfile__preference {
+        border-radius: 0;
+        border-right: 0;
+        border-left: 0;
+        width: auto;
+    }
+
+    .newProfile {
+        overflow-y: hidden;
+    }
+
+    .newProfile__left {
+        min-width: auto;
+    }
+
+    .newProfile__experience {
+        background-size: contain;
+    }
+
+    .newProfile__resume {
+        background-size: 30%;
+    }
+
+    .newProfile__experience__bg > p, .newProfile__resume > div > p {
+        font-size: .89rem;
+    }
+}
+
+@media(max-width: 414px) {
+    .newProfile__experience__bg > h3 {
+        margin-top: 3.5rem;
+    }
+
+    .newProfile__resume > div > h3 {
+        margin-top: 5rem;
+    }
+
+    .newProfile__experience__bg > p, .newProfile__resume > div > p {
+        font-size: .895rem;
+    }
+}

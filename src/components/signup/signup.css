@@ -1,0 +1,181 @@
+:root {
+  --main-text-color: hsla(230, 10%, 30%, 1);
+}
+.main {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  position: relative;
+
+  flex-direction: column;
+  padding-bottom: 0;
+}
+.signinerr{
+  color: hsla(356,86%,55%,1);
+  display: none;
+  padding-top: 15px;
+}
+.main_banner {
+  width: 100%;
+  position: relative;
+  min-height: 45px;
+  box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.2), 0 2px 5px 0 rgba(0, 0, 0, 0.01) !important;
+  padding: 15px;
+  margin: 0;
+}
+.container {
+  position: relative;
+  z-index: inherit;
+
+  /* top: 50%; */
+  /* transform: translateY(-50%); */
+  min-width: 22%;
+  text-align: center;
+
+  /* margin-top: 8px; */
+  /* margin-top: 40px; */
+
+  /* width: 25%; */
+}
+.react-tel-input .signup-contact {
+  width: 103% !important;
+}
+
+.react-tel-input .country-list {
+  text-align: left;
+}
+
+.container-success {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  padding: 25px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  min-width: 22%;
+  max-width: 325px;
+  text-align: center;
+}
+
+.infodiv {
+  padding: 15px 0px 20px 0px;
+}
+
+.signup-title {
+  font-size: 1.5rem;
+  line-height: 38.4px;
+  font-weight: 600;
+  /* margin-bottom: 2rem; */
+  margin-top: 0.5rem;
+  color: var(--main-text-color);
+}
+
+.with-google,
+.with-linkedin,
+.with-apple {
+  font-size: 1.125rem;
+  line-height: 1.56em;
+  font-weight: 600;
+  border: 1px solid rgba(145, 148, 161, 0.5);
+  padding: 0.2rem 1.42em;
+  border-radius: 4px;
+  /* margin-top: 1rem; */
+  /* margin-top: 0.5rem; */
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  color: var(--main-text-color);
+  width: 75%;
+  margin: 20px auto;
+}
+.with-email {
+  width: 100%;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: hsla(230, 8%, 60%, 1);
+  text-align: center;
+  border-bottom: 1px solid hsla(230, 8%, 60%, 1);
+  line-height: 0.1em;
+  margin: 1.5rem 0 1rem;
+}
+.with-email span {
+  background: #fff;
+  padding: 0 10px;
+}
+.email-input {
+  width: 95%;
+  border-radius: 4px;
+  height: 2rem;
+  font-size: 1rem;
+  border: 1px solid rgb(189, 189, 189);
+  padding: 0 10px;
+}
+.email-input:focus {
+  border-color: hsla(230, 84%, 63%, 1);
+}
+.create-acc {
+  border: none;
+  color: white;
+  width: 100%;
+  background-color: hsla(230, 84%, 63%, 1);
+  font-size: 1.125rem;
+  line-height: 1.56em;
+  font-weight: 600;
+  margin-top: 1rem;
+  padding: 0.7rem 1.42em;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all 0.3s ease-in-out;
+}
+.create-acc:hover {
+  background-color: rgb(44, 75, 233);
+}
+.log-in {
+  font-size: 1rem;
+  line-height: 1.58em;
+  font-weight: 400;
+  /* margin-top: 1rem; */
+  margin-top: 0.3rem;
+  color: rgb(59, 59, 59);
+}
+.log-in-link {
+  color: hsla(230, 84%, 63%, 1);
+  text-decoration: underline;
+  cursor: pointer;
+}
+.first-label,
+.email-label,
+.contact-label,
+.last-label,
+.password-label {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  color: var(--main-text-color);
+  margin-bottom: 0.3rem;
+}
+.email-label,
+.contact-label,
+.last-label,
+.password-label {
+  margin-top: 0.8rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .main {
+    width: 100vw;
+    overflow-x: hidden;
+  }
+  .container {
+    margin-left: -20px;
+    padding-bottom: 12%;
+  }
+  .signup-title {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+}

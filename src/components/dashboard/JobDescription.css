@@ -1,0 +1,526 @@
+body {
+  overflow-x: hidden;
+  width: 100vw;
+  max-width: 100%;
+  min-height: 100vh;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+.jobDescription {
+  /* background-color: #edf3f3; */
+  background-color: white;
+  min-height: 100%;
+  padding-bottom: 5%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.jobDescription__header {
+  position: relative;
+  top: 0;
+  left: 0;
+  background-color: white;
+  height: 100px;
+}
+
+.jobDescription__backbtn {
+  width: 100%;
+}
+
+.jobDescription__container {
+  position: relative;
+  margin: 0 auto;
+  margin-top: 5%;
+  min-height: 100%;
+  /* padding: 0.9375rem ; */
+  width: 783px;
+  border: 1px solid rgb(238, 236, 236);
+  border-radius: 0.3125rem;
+  /* border: 1px solid #d6dae0; */
+
+  background-color: white;
+  -webkit-transition: all 125ms cubic-bezier(0.25, 0.1, 0.25, 1);
+  transition: all 125ms cubic-bezier(0.25, 0.1, 0.25, 1);
+
+  margin-bottom: 0.9375rem;
+  overflow: hidden;
+}
+
+.jobDescription__banner {
+  position: relative;
+  top: 0;
+  width: 100%;
+  /* background-image: url("//spin.atomicobject.com/wp-content/uploads/20170324102432/portfolio-tips-feature-image.jpg"); */
+  height: 200px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.color-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.6;
+}
+
+.banner__image {
+  position: relative;
+  top: 17%;
+  height: 4rem;
+  width: 4rem;
+  border-radius: 15px;
+}
+
+.jobDescription__title {
+  margin: 0 4%;
+  margin-top: 7%;
+}
+
+.jobDescription__title > h1 {
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 600;
+  font-family: Inter, sans-serif;
+  color: #333;
+
+  height: 100%;
+}
+
+.jobDescription__name {
+  font-size: 14px;
+
+  color: #222;
+  font-family: Inter, sans-serif;
+  font-weight: 600;
+  line-height: 1.43;
+}
+
+.jobDescription__desc {
+  margin: 3% 4%;
+  word-break: break-word;
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  padding-bottom: 8px;
+  color: #484848;
+  /* color: black; */
+}
+
+.jobDescription__work {
+  margin: 4%;
+  word-break: break-word;
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  padding-bottom: 8px;
+  color: #484848;
+}
+
+.jobDescription__work > h2 {
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 600;
+  font-family: Inter, sans-serif;
+  color: #333333;
+}
+
+.jobDescription__work li {
+  padding-bottom: 8px;
+  line-height: 22px;
+}
+
+.jobDescription__work span {
+  padding-bottom: 8px;
+  line-height: 22px;
+}
+
+.work__points {
+  margin-left: -3%;
+  word-break: break-word;
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  padding-bottom: 8px;
+  color: #484848;
+  list-style-type: numbers;
+}
+
+.jobDescription__error {
+  width: 80%;
+  margin-left: 8%;
+  margin-top: 5%;
+  background-color: #eafcff;
+  height: 50px;
+  border: 1px solid#7fb8ee;
+  border-radius: 7px;
+  display: flex;
+  flex-direction: flex-start;
+  justify-content: flex-start;
+  align-items: center;
+  /* padding: 5px; */
+}
+
+.warning {
+  width: 10%;
+  object-fit: contain;
+  height: 30px;
+}
+
+/* .warning__emoji {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+} */
+
+.jobDescription__error > p {
+  font-size: 14px;
+}
+
+.mobilebanner__image {
+  display: none;
+}
+
+.jobDescription__backbutton {
+  background-color: white;
+
+  margin-left: 1px;
+  width: 100%;
+  padding: 20px;
+  /* box-shadow: 3px 0 8px 2px #f1f0f0; */
+  box-shadow: 3px 0 8px 2px white;
+  display: flex;
+  align-items: center;
+  z-index: 2;
+  width: inherit;
+  position: relative;
+  top: 40px;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  border: none;
+}
+.jobDescription__backbtn {
+  background-color: white;
+  width: 100%;
+  z-index: 999;
+  border: none;
+}
+
+.jobDescription__header {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .jobDescription {
+    width: 100vw;
+    overflow-x: hidden;
+  }
+  .jobDescription__header {
+    display: none;
+  }
+  .jobDescription__backbtn {
+    position: absolute;
+    z-index: 999;
+    color: white;
+    background: transparent;
+    width: 50%;
+    top: 30px;
+  }
+
+  .jobDescription__backbutton {
+    /* background-image: url("//spin.atomicobject.com/wp-content/uploads/20170324102432/portfolio-tips-feature-image.jpg"); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+
+    width: 100%;
+    height: 180px;
+
+    position: absolute;
+    z-index: 1;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    top: 0;
+    width: 100vw;
+
+    box-sizing: border-box;
+
+    margin-left: calc(-50vw + 50%);
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .mobilebanner__image {
+    display: block;
+    width: 4.5rem;
+    height: 4.5rem;
+    position: relative;
+    top: 80px;
+    /* top: -30px; */
+    left: 40%;
+    z-index: 999;
+
+    border-radius: 20%;
+  }
+
+  .jobDescription__banner {
+    display: none;
+  }
+  .banner-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.6;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+  }
+  .jobDescription__container {
+    margin: -0.3%;
+    width: 100vw;
+    border: none;
+    /* border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    position: relative;
+    z-index: 999;
+    top: 120px; */
+  }
+  .jobDescription__title > h1 {
+    margin-top: 35%;
+    font-size: 24px;
+    line-height: 20px;
+    font-weight: 600;
+    font-family: Inter, sans-serif;
+    color: #333;
+    height: 100%;
+  }
+  .jobDescription__name {
+    font-size: 20px;
+    font-weight: 500;
+    color: #333;
+    margin-top: -10px;
+  }
+
+  .jobDescription__desc {
+    margin-left: 5%;
+    width: 88%;
+    color: black;
+  }
+
+  .jobDescription__title {
+    margin-top: 15%;
+    margin-left: 5%;
+  }
+
+  .jobDescription__work {
+    margin-left: 5%;
+    width: 88%;
+    color: black;
+  }
+
+  .work__points {
+    color: black;
+    margin-left: -6%;
+  }
+
+  .warning {
+    margin-right: 10px;
+  }
+
+  .jobDescription__error {
+    margin-left: 1%;
+    width: 95%;
+    height: 70px;
+    padding: 8px 10px;
+  }
+
+  .jobDescription__error > p {
+    margin-right: 0;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .jobDescription__title > h1 {
+    line-height: 2rem;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .jobDescription__title > h1 {
+    margin-top: 40%;
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 600px) {
+  .jobDescription {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  .jobDescription__header {
+    display: none;
+  }
+  .jobDescription__backbtn {
+    position: absolute;
+    z-index: 999;
+    color: white;
+    background: transparent;
+  }
+
+  .jobDescription__backbutton {
+    background-size: contain;
+    background-attachment: fixed;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    height: 160px;
+    position: absolute;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    top: 0;
+    width: 100vw;
+    box-sizing: border-box;
+
+    margin-left: calc(-50vw + 50%);
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .mobilebanner__image {
+    display: inline;
+    width: 5.5rem;
+    height: 5.5rem;
+    position: relative;
+    top: 50px;
+    left: 44%;
+    z-index: 999;
+    margin-bottom: 40px;
+    border-radius: 50%;
+  }
+
+  .jobDescription__banner {
+    display: none;
+  }
+  .banner-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.6;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+  }
+  .jobDescription__container {
+    margin: -0.3%;
+    width: 100vw;
+    border: none;
+  }
+  .jobDescription__title > h1 {
+    margin-top: 10%;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 600;
+    font-family: Inter, sans-serif;
+    color: #333;
+
+    height: 100%;
+  }
+  .jobDescription__name {
+    font-size: 16px;
+  }
+  .jobDescription__desc {
+    margin-left: 5%;
+    width: 88%;
+  }
+
+  .jobDescription__title {
+    margin-top: 15%;
+    margin-left: 5%;
+  }
+
+  .jobDescription__work {
+    margin-left: 5%;
+    width: 88%;
+  }
+
+  .warning {
+    margin-right: 10px;
+  }
+
+  .jobDescription__error {
+    margin-left: 1%;
+    width: 95%;
+    height: 70px;
+    padding: 8px 10px;
+  }
+
+  .jobDescription__error > p {
+    margin-right: 0;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .jobDescription__backbutton {
+    /* height: 150px; */
+  }
+}
+
+@media only screen and (min-width: 770px) {
+  .jobDescription__backbutton {
+    background-size: 0 !important;
+  }
+}
+
+/* @media only screen and (min-width: 1500px) and (max-width:2000px) {
+  .jobDescription__title > h1 {
+    font-size: 30px;
+  }
+  .jobDescription__name {
+    font-size: 23px;
+  }
+  .jobDescription__work > h2 {
+    font-size: 29px;
+  }
+  .jobDescription__desc {
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 30px;
+  }
+  .work__points {
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 30px;
+  }
+  .jobDescription__error > p {
+    font-size: 20px;
+    font-weight: 400;
+  }
+  .jobDescription__error {
+    padding: 10px;
+  }
+  .section__header {
+    font-size: 20px;
+  }
+} */
+
+/* @media only screen and (max-width:1500px) and (min-width:1024px){
+
+} */
+
+/* font-family: Inter, sans-serif; */

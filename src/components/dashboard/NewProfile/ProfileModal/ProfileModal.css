@@ -1,0 +1,138 @@
+.profile__modal__form__fullname {
+    display: flex;
+    align-items: center;
+}
+
+.profile__modal__form__fullname > div:first-child {
+    margin-right: 3.22rem;
+}
+
+.profile__modal__form__fullname > div > label , .profile__modal__form__mobile > div > label{
+    font-weight: 600;
+    color: #201e27;
+    display: block;
+    font-size: .75rem;
+    line-height: 1.6;
+    margin-bottom: 5px;
+}
+
+.profile__modal__form__fullname > div > input, .profile__modal__phoneInput {
+    font-size: .875rem !important;
+    margin: 0;
+    margin-bottom: 13px;
+    background: transparent;
+    color: #030303;
+    caret-color: #2dc5a1;
+    display: block;
+    height: 2.5rem !important;
+    line-height: 1.375rem !important;
+    outline: none !important;
+    padding: 0 .875rem .1em;
+    width: 98%;
+    border-radius: .3125rem !important;
+    border: 1px solid #ddd !important;
+    transition: all 0.2s ease-in;
+}
+
+.profile__modal__form__fullname > div > input:focus {
+    border: 1px solid #000 !important;
+}
+
+.profile__modal__form__mobile {
+    display: flex;
+    align-items: center;
+}
+
+.profile__modal__form__mobile > div:first-child {
+    margin-right: 2rem;
+}
+
+.profile__modal__container {
+    margin-bottom: 13px;
+    height: 2.5rem;
+    border-radius: .3125rem !important;
+    transition: all 0.2s ease-in;
+    font-family: "Inter", sans-serif !important;
+}
+
+.profile__modal__container .country-list {
+    width: 250px !important;
+}
+
+/* .profile__modal__phoneInput:focus + .profile__modal__container {
+    border: 1px solid #000 !important;
+} */
+
+.profile__modal__phoneInput {
+    width: 100% !important;
+}
+
+.profile__modal__form > form > textarea {
+    height: 200px ;
+    width: 94.5%;
+    font-size: .9rem !important;
+    resize: none !important;
+    caret-color: #2dc5a1;
+    border: 1px solid #ddd;
+    outline: none !important;
+    border-radius: 5px;
+    padding: 0 .875rem .1em;
+    padding-top: 10px;
+    transition: border 0.2s ease-in;
+}
+
+.profile__modal__form > form > textarea:focus {
+    border: 1px solid #000;
+}
+
+@media(max-width: 768px) {
+    .profile__modal__form__fullname > div > input {
+        width: 100% !important;
+    }
+
+    .profile__modal__form__fullname > div:first-child {    
+        margin-right: 4rem;
+    }
+
+    .profile__modal__form__fullname > div > label, .profile__modal__form__mobile > div > label {
+        font-size: .95rem;
+    }   
+}
+
+@media(max-width: 540px) {
+    .profile__modal__form__fullname > div:first-child {
+        margin-right: 1.75rem !important;
+    }
+
+    .experience__modal__form > form > label, .elsewhere__modal__form > form > label, 
+    .profile__modal__form > form > label, .profile__modal__form__fullname > div > label, 
+    .profile__modal__form__mobile > div > label {
+        font-size: .875rem;
+    }
+
+    .profile__modal__form__fullname > div > input {
+        width: 90% !important;
+    }
+}
+
+@media(max-width: 414px) {
+    .profile__modal__form__fullname > div > input {
+        width: 83% !important;
+    }
+
+    .profile__modal__form__mobile {
+        display: block;
+    }
+
+    .profile__modal__form__mobile > div:first-child {
+        margin-right: 0px;
+    }
+
+    .profile__modal__phoneInput {
+        width: 101% !important;
+    }
+
+    .profile__modal__form > form > textarea {
+        width: 93%;
+    }
+}

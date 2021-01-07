@@ -1,0 +1,205 @@
+.home {
+  width: 100vw;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.home__content {
+  height: 100vh;
+}
+
+.home__title {
+  margin-right: 20%;
+  font-size: 32px;
+  font-weight: 500;
+  width: 100%;
+  letter-spacing: -1px;
+  position: absolute;
+  left: 38%;
+  bottom: 70%;
+}
+
+/* .homeasset {
+  margin-top: 200px;
+  height: 100vh;
+  
+  background-repeat: no-repeat;
+  width: 90%;
+  height: 500px;
+
+  padding: 3rem;
+  padding-bottom: 0;
+  position: absolute;
+  bottom: 0;
+} */
+
+/* .homeasset > img {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 100px;
+} */
+
+.title__container {
+  float: right;
+  padding-right: 20%;
+  padding-top: 3%;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: 500;
+  width: 100%;
+  letter-spacing: -1px;
+  align-self: flex-end;
+}
+
+.home {
+  background: url("/images/assets/home-edited.svg") no-repeat center bottom fixed;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  max-width: 100%;
+  background-size: cover;
+  /* background-attachment: scroll; */
+}
+
+@keyframes jumping {
+  0% {
+    transform: translateY(3px);
+  }
+
+  100% {
+    transform: translateY(-3px);
+  }
+}
+
+.asset1 {
+  position: fixed;
+  right: 18%;
+  top: 2%;
+  animation: jumping 0.8s linear 0s infinite alternate;
+}
+.asset2 {
+  position: fixed;
+  right: 54%;
+  top: 24%;
+  animation: jumping 0.8s linear 0s infinite alternate;
+}
+.asset3 {
+  position: fixed;
+  right: 6%;
+  top: 19%;
+  animation: jumping 0.8s linear 0s infinite alternate;
+}
+.asset4 {
+  position: fixed;
+  right: 33%;
+  top: 45%;
+  animation: jumping 0.8s linear 0s infinite alternate;
+}
+.asset5 {
+  position: fixed;
+  right: 25%;
+  top: 29%;
+  animation: jumping 0.8s linear 0s infinite alternate;
+}
+.asset6 {
+  position: fixed;
+  right: 57%;
+  top: 37%;
+  animation: jumping 0.8s linear 0s infinite alternate;
+}
+.asset7 {
+  position: fixed;
+  right: 63%;
+  top: 17%;
+  animation: jumping 0.8s linear 0s infinite alternate;
+}
+.asset8 {
+  position: fixed;
+  right: 81%;
+  top: 13%;
+  animation: jumping 0.8s linear 0s infinite alternate;
+}
+.asset9 {
+  position: fixed;
+  right: 73%;
+  top: 5%;
+  animation: jumping 0.8s linear 0s infinite alternate;
+}
+.asset10 {
+  position: fixed;
+  right: 52%;
+  top: 33%;
+  animation: jumping 0.8s linear 0s infinite alternate;
+}
+.asset11 {
+  position: fixed;
+  right: 1.5%;
+  top: 61%;
+  animation: jumping 0.8s linear 0s infinite alternate;
+}
+.asset12 {
+  position: fixed;
+  right: 17%;
+  top: 44%;
+  animation: jumping 0.8s linear 0s infinite alternate;
+}
+.asset13 {
+  position: fixed;
+  right: 43%;
+  top: 4%;
+  animation: jumping 0.8s linear 0s infinite alternate;
+}
+@media only screen and (max-width: 1150px) {
+  .home {
+    top: 5%;
+  }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 1024px) {
+  .home {
+    min-height: 97vh;
+  }
+  .home__title {
+    margin-top: 180px;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .home {
+    min-height: 97vh;
+  }
+  .title {
+    z-index: 1;
+    position: relative;
+  }
+}
+
+/* @media only screen and (max-width: 768px){
+  .home {
+    min-height: 96vh;
+  }
+} */
+
+@media only screen and (max-width: 768px) {
+  .title__container {
+    float: none;
+    padding-right: 20px;
+    top: 15%;
+    padding-left: 10px;
+    z-index: -10;
+  }
+  .home {
+    align-items: center;
+    text-align: center;
+    top: 8%;
+  }
+  .title {
+    font-size: 26px;
+    line-height: 30px;
+  }
+}

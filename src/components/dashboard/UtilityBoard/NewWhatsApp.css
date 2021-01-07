@@ -1,0 +1,95 @@
+.wa-card{
+    width: 400px;
+    border: 2px solid rgb(225,204,228);
+    border-radius: 15px;
+    margin-top: 20px;
+    margin-left: 102px;
+    display: inline-block;
+}
+
+.wa-header-img{
+    width: 25px;
+    height: 25px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.wa-header-text{
+    margin-bottom: 10px;
+    margin-left: 55px;
+    margin-top:0px;
+}
+
+.wa-body{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-color: white;
+}
+
+.wa-title{
+    margin-top: 25px;
+    margin-right: 203px;
+    margin-bottom: 0px;
+    font-weight: 500;
+    font-size: 1rem;
+    display: inline-block;
+    float: right;
+}
+
+.wa-body-group-name{
+    margin-left:21px;
+    margin-top: 8px;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.wa-body-group-info{
+    margin-left: 21px;
+    margin-bottom: 0px;
+    margin-top: -12px;
+    padding-bottom: 30px;
+    color: #6c757d;
+    font-weight: 400;
+    font-size: 1rem;
+}
+.wa-footer{
+    background-color: rgb(240, 237, 243);
+    border-color: rgb(225,204,228);
+    border-top: 1px solid rgb(225,204,228);;
+    border-top-width: 2px;
+    border-radius: 0px 0px 14px 14px !important;
+    height: 64px;
+    padding-top: 1px;
+}
+
+.wa-footer-img{
+    height: 40px;
+    float: right;
+    margin-right: 32px;
+    margin-top: 11px;
+}
+
+.wa-footer-btn{
+    background-color: rgb(103,21,110);
+    border: 0px;
+    width: 130px;
+    height: 36px;
+    border-radius: 15px;
+    margin-top:11px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.wa-footer-btn-text{
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-top:0px;
+    margin-bottom:0px;
+}
+
+.shadow {
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+}

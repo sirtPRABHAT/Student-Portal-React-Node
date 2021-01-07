@@ -1,0 +1,49 @@
+.utility-component{
+background-color: #f8f8f8;
+}
+
+.utility-header{
+    background-color: white;
+    height: 198px;
+}
+.illustration1{
+    width: 560px;
+    height: 230px;
+    /* margin-left: 155px; */
+    margin-top: 25px;
+    background-color: white;
+    border-radius: 15px;
+    position: relative;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+    display: inline-block;
+}
+.illustration2{
+    width: 360px;
+    height: 230px;
+    margin-left: 30px;
+    margin-top: 25px;
+    background-color: white;
+    border-radius: 15px;
+    position: relative;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+    display: inline-block;
+}
+.illustration3{
+    width: 520px;
+    height: 245px;
+    margin-left: 30px;
+    margin-top: 25px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+    display: inline;
+    position: absolute;
+}
+.align-div{
+    margin: auto;
+    width: fit-content;
+}
+.align-div2{
+    width: 960px;
+    margin: auto;
+}

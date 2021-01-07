@@ -1,0 +1,18 @@
+.dash__cards{
+    width: 965px;
+    /* margin-right: auto;
+    margin-left: 110px; */
+    margin: auto;
+    padding: 0;
+    margin-top: -60px;
+}
+.dashCards{
+    height: 118px;
+}
+.dashCards > h4{
+    margin-top: 80px;
+    margin-left: 25px;
+}
+.dashCards >img{
+    width: 82%;
+}

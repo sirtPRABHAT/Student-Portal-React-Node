@@ -1,0 +1,194 @@
+.navbar {
+  min-height: 120px;
+}
+.profile {
+  overflow-y: visible;
+  background-color: #edf3f3;
+  display: flex;
+  justify-content: center;
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 400;
+}
+.profile__form {
+  background-color: #fff;
+  display: inline-block;
+  margin: 20px 40px 0 40px;
+  border-radius: 6px;
+  width: 60%;
+  padding: 30px 40px;
+  padding-top: 5%;
+  text-align: start;
+}
+.profile__wrap {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin-left: -20px;
+}
+.profile__wrap--full {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.profile__row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 15px;
+}
+.profile__input {
+  font-family: "Inter";
+  border: 2px solid hsla(230, 7%, 84%, 1);
+  border-radius: 4px;
+  padding: 8px 16px 8px 16px;
+  font-size: 15px;
+  width: 70%;
+  text-align: start;
+  /* max-width: 315px; */
+}
+.profile__input__phone {
+  font-family: "Inter";
+  /* border: 2px solid hsla(230, 7%, 84%, 1);
+	border-radius: 4px; */
+  /* padding: 8px 16px 8px 16px; */
+  font-size: 15px;
+  width: 102%;
+  /* max-width: 315px; */
+}
+
+.react-tel-input .phoneinput {
+  border: 2px solid hsla(230, 7%, 84%, 1) !important;
+  font-family: "Inter";
+  border-radius: 4px !important;
+  padding: 8px 16px 8px 48px !important;
+  font-size: 15px !important;
+  width: 78% !important;
+  /* width: 80% !important; */
+}
+select {
+  cursor: pointer;
+}
+#option {
+  font-family: "Inter";
+  font-weight: 300;
+}
+.profile__button {
+  padding: 15px;
+  background-color: #516cf0;
+  color: rgb(255, 255, 255);
+  border: 0px none;
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+}
+.hidden {
+  display: none;
+}
+.success {
+  color: greenyellow;
+}
+@media screen and (max-width: 1200px) {
+  .react-tel-input .phoneinput {
+    width: 80% !important;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  .react-tel-input .phoneinput {
+    width: 76% !important;
+  }
+  #college {
+    width: 50%;
+  }
+  #major {
+    width: 54%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .react-tel-input .phoneinput {
+    width: 83% !important;
+  }
+}
+@media screen and (max-width: 767px) {
+  .profile__form {
+    margin: 20px 10px 0 10px;
+    width: 95%;
+  }
+  .react-tel-input .phoneinput {
+    width: 82% !important;
+  }
+}
+@media screen and (max-width: 600px) {
+  .profile__form {
+    margin: 15px 10px 0;
+  }
+  .profile__row {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0px 10px;
+  }
+  .profile__wrap {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .profile__input {
+    width: 85%;
+  }
+  .react-tel-input .phoneinput {
+    width: 92% !important;
+  }
+  .option__heading {
+    flex: 1;
+  }
+}
+@media screen and (max-width: 500px) {
+  .react-tel-input .phoneinput {
+    width: 95% !important;
+  }
+}
+@media screen and (max-width: 400px) {
+  .react-tel-input .phoneinput {
+    width: 97% !important;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .profile__input {
+    width: 90%;
+  }
+  .profile__input__phone {
+    width: 107%;
+  }
+  .profile__wrap > select {
+    width: 103%;
+  }
+  .profile__heading {
+    margin-left: -12px;
+  }
+  .navbar > h1 {
+    margin-top: -90px;
+  }
+  .main-content-container {
+    margin-top: -80px;
+  }
+  .profile__button {
+    margin-left: 8px;
+    width: 80%;
+  }
+}
+
+.option__heading {
+  flex: 1;
+}
+
+/* #college {
+  width: 50%;
+}
+#major {
+  width: 55%;
+} */

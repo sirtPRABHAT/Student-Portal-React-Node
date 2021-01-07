@@ -1,0 +1,119 @@
+.preference__modal {
+    width: 40rem;
+    margin: 24px auto;
+}
+
+.preference__modal > div.MuiDialog-container.MuiDialog-scrollPaper > div {
+    border-radius: 8px;
+}
+
+.preference__modal__container {
+    padding: 1.5rem 1.5rem;
+}
+
+.preference__modal__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 3rem;
+    padding: 0px 1.5625rem;
+    background: white;
+    position: sticky;
+    box-shadow: white 5px 10px 10px 0px;
+}
+
+.preference__modal__header > .MuiSvgIcon-root {
+    font-size: 2.5rem !important;
+    line-height: 1.625rem !important;
+    width: 0.6875em !important;
+    font-weight: 800 !important;
+    cursor: pointer;
+    color: #033443 !important;
+}
+
+.preference__modal__header > button {
+    border: none;
+    outline: none;
+    min-height: 2.5rem;
+    min-width: 6.25rem;
+    color: #fff;
+    background: #201e27;
+    padding: .375rem .75rem;
+    border-radius: .3125rem;
+    font-weight: 600;
+    font-size: .875rem;
+    height: 2.5rem;
+    cursor: pointer;
+}
+
+.preference__modal__roles {
+    width: 90%;
+    margin: auto;
+}
+
+.preference__modal__roles > h2{
+    text-align: center;    
+}
+
+.preference__modal__roles__info {
+    text-align: left;
+    margin-left: 10px;
+}
+
+.preference__modal__roles__info > h5{
+    font-size: .875rem;
+    color: #201e27;
+    margin: 0;
+    font-weight: 600;
+}
+
+.preference__modal__roles__info > p{
+    margin-top: 5px;
+    font-size: .875rem;
+    font-weight: 600;
+    color: #788699;
+}
+
+.preference__modal__roles__role {
+    color: #788699;
+    display: inline-flex;
+    height: fit-content;
+    width: fit-content;
+    margin: .35rem .25rem;
+    padding: .7rem .875rem;
+    font-size: .875rem;
+    text-align: center;
+    font-weight: 400;
+    line-height: 1.25;
+    border: 1px solid #d6dae0;
+    border-radius: 1.5rem;
+    cursor: pointer;
+}
+
+.preference__modal__roles__role__selected {
+    color: white;
+    display: inline-flex;
+    height: fit-content;
+    width: fit-content;
+    margin: .35rem .25rem;
+    padding: .7rem .875rem;
+    font-size: .875rem;
+    text-align: center;
+    font-weight: 400;
+    line-height: 1.25;
+    border: 1px solid #61a0ff;
+    background: #61a0ff;
+    border-radius: 1.5rem;
+    cursor: pointer;
+}
+
+@media(max-width: 540px) {
+    .preference__modal {
+        width: auto;
+        margin: auto;
+    }
+
+    .preference__modal > div.MuiDialog-container.MuiDialog-scrollPaper > div {
+        border-radius: 0px;
+    }
+}

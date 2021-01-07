@@ -1,0 +1,407 @@
+.studentAssessment__body {
+  position: relative;
+  padding-bottom: 50px;
+  padding-left: 60px;
+  margin-top: 60px;
+  margin-left: 42px;
+  flex: 0.7;
+}
+
+.studentAssessment__bodyContainer {
+  width: 720px;
+  margin-left: -50px;
+}
+
+.studentAssessment__bodyHeader {
+  font-weight: bold;
+  line-height: 1.63;
+  color: #676a78;
+  margin-top: 20px;
+}
+
+.studentAssessment__question {
+  /* color: #676a78; */
+  color: black;
+  font-style: normal;
+  line-height: 1.63;
+  font-stretch: normal;
+  margin-bottom: 25px;
+  letter-spacing: normal;
+  margin-top: 3px;
+  word-wrap: normal;
+  width: 90%;
+}
+
+.student__textarea {
+  resize: none;
+  padding: 14px;
+  box-sizing: border-box;
+  position: relative;
+  background-color: #fff;
+  color: rgba(0, 0, 0, 0.87);
+  cursor: text;
+  display: inline-flex;
+  font-size: 1rem;
+  align-items: center;
+  font-family: Open Sans;
+  line-height: 1.1875em;
+  border: 2px solid #d1d1d1;
+  width: 90%;
+  /* width: 800px; */
+  outline: none;
+}
+
+.student__textarea:hover {
+  border: 2px solid #111;
+}
+
+.student__textarea:focus {
+  border: 2px solid #00a0fc;
+}
+
+.student__textarea::placeholder {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.studentAssessment__questionSubmission {
+  display: flex;
+  align-items: center;
+  position: relative;
+  left: 58%;
+  margin-top: 25px;
+}
+
+.studentAssessment__questionSavebtn {
+  background-color: rgba(0, 160, 252, 0.9);
+  box-shadow: none;
+  color: #ffffff;
+  padding: 6px 12px;
+  min-width: 64px;
+  box-sizing: border-box;
+  min-height: 43px;
+  padding-left: 30px;
+  border-radius: 3px;
+  padding-right: 30px;
+  text-transform: none;
+  border: none;
+  font: 14.3333px Arial;
+  font-weight: 600;
+  position: relative;
+  /* left: 68%; */
+}
+
+.studentAssessment__questionSavebtn:hover {
+  background-color: rgba(0, 160, 252, 1);
+  cursor: pointer;
+}
+
+.studentAssessment__questionBackbtn {
+  position: relative;
+  /* left: 30%; */
+  margin-top: 80px;
+  padding: 6px 8px;
+  min-height: 40px;
+  padding-left: 30px;
+  border-radius: 3px;
+  padding-right: 30px;
+  text-transform: none;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  margin: 0;
+  display: inline-flex;
+  outline: none;
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 1.75;
+  color: #404247;
+  margin-right: 20px;
+}
+
+.studentAssessment__questionBackbtn:hover {
+  background-color: #ededed;
+}
+
+.radio {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  padding: 12px 0;
+  position: relative;
+  font-size: 16px;
+  max-width: 750px;
+  margin-right: auto;
+}
+
+.radioOption {
+  padding-bottom: 10px;
+  /* color: #676a78; */
+  color: black;
+}
+
+.videoUploadContainer {
+  height: 300px;
+  width: 90%;
+  background-color: #ededed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.studentAssessment__videoUploadBtn,
+.studentAssessment__audioUploadBtn {
+  border: 1px solid #2a74eb;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 15px;
+  /* color: #1247f6; */
+  font: 400 13.3333px Arial;
+  outline: none;
+  cursor: pointer;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+
+  background-color: #2a74eb;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  white-space: nowrap;
+}
+
+.assessment-video-upload-btn-label,
+.assessment-audio-upload-btn-label > .MuiSvgIcon-root {
+  /* color: #1247f6 !important; */
+  color: #fff !important;
+}
+
+.assessment-video-upload-icon {
+  color: #fff !important;
+}
+
+.fileUploadContainer {
+  height: 164px;
+  width: 750px;
+  background-color: #ededed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px dashed;
+  border-width: thin;
+  border-color: #ededed;
+}
+
+.fileUploadContainer > .MuiSvgIcon-root {
+  font-size: 50px !important;
+  margin-top: 20px;
+}
+
+.fileUploadContainer > h3 {
+  margin-bottom: 8px;
+  color: #333;
+  margin-top: 0;
+}
+
+.assessment-file-upload-btn-label {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.fileUploadContainer > h5 {
+  color: rgb(161, 159, 159);
+  margin-top: 10px;
+}
+
+.assessment-audio-upload-btn-label,
+.assessment-video-upload-btn-label {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.student-uploaded-files {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: rgba(250, 250, 250, 0.856);
+  position: relative;
+  top: 0;
+  padding: 0 1rem;
+  margin-bottom: 10px;
+  margin-left: -150px;
+}
+
+.student-uploaded-file-logo > .MuiSvgIcon-root {
+  font-size: 35px !important;
+}
+
+.uploaded-file-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 0;
+  padding: 0;
+}
+
+.audio-recorder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.audio-recorder-button1 {
+  border: 1px solid #2a74eb;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 15px;
+  /* color: #1247f6; */
+  font: 400 13.3333px Arial;
+  outline: none;
+  cursor: pointer;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+
+  background-color: #2a74eb;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  white-space: nowrap;
+  width: 150px;
+  margin-top: 10px;
+}
+
+.audio-recorder-button2 {
+  background-color: #a30c18;
+  border: 1px solid #a30c18;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 15px;
+  outline: none;
+  cursor: pointer;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  white-space: nowrap;
+  width: 150px;
+  margin-top: 10px;
+}
+
+/* .audio-recorder-button2 {
+  border: 1px solid #a30c18;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 15px;
+  font: 400 13.3333px Arial;
+  outline: none;
+  cursor: pointer;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+
+  background-color: #a30c18;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  white-space: nowrap;
+  width: 150px;
+  margin-top: 20px;
+}  */
+
+.checkbox-container {
+  margin-top: -10px;
+}
+
+.checkbox-items {
+  display: flex;
+  align-items: center;
+}
+
+.post__audioRecordings {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.post__audioRecordings-rerecord {
+  border: 1px solid #2a74eb;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 15px;
+  /* color: #1247f6; */
+  font: 400 13.3333px Arial;
+  outline: none;
+  cursor: pointer;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+
+  background-color: #2a74eb;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  white-space: nowrap;
+  width: 150px;
+  margin-top: 10px;
+}
+
+.post__fileUploadContainer {
+  height: 164px;
+  width: 750px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px dashed;
+  border-width: thin;
+  border-color: white;
+}
+
+.post__fileUploadContainer > .MuiSvgIcon-root {
+  font-size: 50px !important;
+  margin-top: 20px;
+}
+
+.post__uploaded-files {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.post__uploaded-file {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.post__uploaded-file > .MuiSvgIcon-root {
+  font-size: 50px !important;
+  color: #66cbcb !important;
+}
+
+.post__uploaded-file > p > span {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.assessment-file-post-upload-btn-label {
+  color: rgb(49, 124, 221);
+  text-decoration: underline;
+  margin-top: -5px;
+  font-size: 16px;
+  cursor: pointer;
+}

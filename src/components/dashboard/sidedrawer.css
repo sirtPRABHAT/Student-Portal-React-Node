@@ -1,0 +1,33 @@
+.drawer {
+  position: fixed;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+  z-index: 200;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-out;
+}
+
+.drawer.open {
+  transform: translateX(0);
+}
+
+@media only screen and (max-width: 1150px) {
+  .drawer {
+    width: 40%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .drawer {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .drawer {
+    width: 80%;
+  }
+}

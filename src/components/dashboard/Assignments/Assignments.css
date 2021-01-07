@@ -1,0 +1,87 @@
+.assignments {
+    background-color: #f8f8f8;
+    padding: 20px;
+    margin-top: 198px;
+    min-height: 67vh;
+    font-family: Inter;
+}
+
+.assignments__cards {
+    width: 86%;
+    margin: auto;
+    margin-left: 77px;
+    margin-top: -80px;
+    display: grid;
+    place-items: center;
+    grid-row-gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    list-style: none;
+}
+
+.pagination {
+    width: max-content;
+    margin: auto;
+    margin-top: 2rem;
+}
+
+@media(min-width: 1800px) {
+
+    .assignments{
+        min-height: 78vh;
+    }
+    .assignments__cards{
+        max-width: 1000px;
+        margin : auto;
+    }
+    
+}
+
+@media(max-width: 1300px) {
+
+    .assignments__cards {
+        grid-template-columns: repeat(3, 1fr);
+        margin-left: auto;
+    }
+}
+
+
+
+@media(max-width: 768px) {
+    .assignments__cards {
+        width: 100%;
+    }
+
+    .assignments {
+        min-height: 75vh;
+    }
+}
+
+@media(max-width: 600px) {
+    .assignments {
+        margin-bottom: -10px;
+    }
+
+    .assignments__cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(max-width: 540px) {
+    .assignments__cards {
+        grid-template-columns: repeat(2, 1fr);
+        overflow-y: hidden;
+    }
+
+    .infinite-scroll-component {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        place-items: center;
+        grid-row-gap: 20px;
+    }
+}
+
+@media(max-width: 414px) {
+    .infinite-scroll-component {
+        grid-template-columns: 1fr;
+    }
+}

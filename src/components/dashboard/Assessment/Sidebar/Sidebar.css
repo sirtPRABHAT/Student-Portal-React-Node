@@ -1,0 +1,105 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  flex: 0.27;
+  border-right: 10px solid #ededed;
+}
+
+.sidebar__header {
+  background-color: white;
+  border-bottom: 10px solid #ededed;
+  padding-left: 10px;
+}
+
+.sidebar__headerComponents {
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+  margin-top: 20px;
+}
+
+.icon-button {
+  margin-left: -50px;
+  color: #fff !important;
+}
+
+.icon-button:hover {
+  background: none !important;
+}
+
+.icon-button:active {
+  background: none !important;
+}
+
+.sidebar__headerComponent {
+  font-size: 35px !important;
+  color: rgb(13, 106, 192) !important;
+  border: 1px solid #d6dae0;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-left: -50px;
+}
+
+.sidebar__headerComponents > h3 {
+  margin-left: 50px;
+  margin-top: 5px;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.question__card {
+  width: 90%;
+  background: #fff;
+  padding-top: 3px;
+  padding-left: 20px;
+  height: 150px;
+  border-bottom: 2px solid #ededed;
+}
+
+.question__cardHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.question__cardHeader > h3 {
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.question__cardHeaderIcon {
+  font-size: 23px !important;
+  margin-top: -5px;
+  cursor: pointer;
+}
+
+.question__cardBody {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.question__cardBody > p {
+  font-size: 11px;
+  font-weight: 500;
+  color: rgb(114, 113, 113);
+  margin-top: -5px;
+  height: 40px;
+  overflow: hidden;
+}
+
+.question__cardFooter {
+  display: flex;
+  align-items: center;
+  margin-top: -15px;
+  color: rgb(114, 113, 113);
+}
+
+.question__cardFooter > .MuiSvgIcon-root {
+  font-size: 25px !important;
+}
+
+.question__card:active {
+  border-left: 10px solid rgb(13, 100, 199);
+  border-radius: 5px;
+}

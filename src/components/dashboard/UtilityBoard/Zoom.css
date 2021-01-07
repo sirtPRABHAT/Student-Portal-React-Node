@@ -1,0 +1,97 @@
+.zoom-div{
+    width: 400px;
+    border: 2px solid rgb(211, 243, 255);
+    background-color: white;
+    border-radius: 15px;
+    /* margin-left: 152px; */
+    margin-top: 25px;
+    display: inline-block;
+    margin-bottom: 120px;
+    position: relative;
+    display: inline-block;
+}
+
+.zoom-img{
+    width:40px;
+    height:40px;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.zoom-name{
+    margin-top: 20px;
+    margin-right: 290px;
+    margin-bottom: 0px;
+    font-weight: 700;
+    font-size: 1rem;
+    display: inline-block;
+    float: right;
+}
+
+.zoom-time{
+    margin-top: -22px;
+    margin-right: 286px;
+    margin-bottom: 0px;
+    font-weight: 500;
+    font-size: 0.8rem;
+    color: gray;
+    display: inline-block;
+    float: right;
+}
+
+.zoom-text{
+    margin-left: 20px;
+    font-weight: 700;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+.zoom-id{
+    background-color: rgb(242, 251, 255);
+    border: 2px solid rgb(237, 249, 255);
+    border-top: 2px solid rgb(211, 243, 255);
+}
+
+.zoom-id-text{
+    margin-left: 20px;
+    margin-bottom: 16px;
+    margin-top: 16px;
+    font-weight: 450;
+}
+
+.zoom-footer{
+    background-color: rgb(242, 251, 255);
+    border-top: 2px solid rgb(211, 243, 255);
+    border-radius: 0px 0px 14px 14px !important;
+    height: 55px;
+    padding-top: 1px;
+}
+
+.zoom-footer-img{
+    height: 40px;
+    float: right;
+    margin-right: 32px;
+    margin-top: 11px;
+}
+
+.zoom-footer-btn{
+    background-color: rgb(2,123,91);
+    border: 0px;
+    width: 80px;
+    height: 36px;
+    border-radius: 7px;
+    margin-top:11px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.zoom-footer-btn-text{
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-top:0px;
+    margin-bottom:0px;
+}

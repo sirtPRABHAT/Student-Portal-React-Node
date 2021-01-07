@@ -1,0 +1,239 @@
+.experience__modal, .elsewhere__modal, .profile__modal {
+    width: 37.5rem;
+    margin: 24px auto;
+}
+
+.experience__modal > div.MuiDialog-container.MuiDialog-scrollPaper > .MuiDialog-paperFullScreen, 
+.elsewhere__modal > div.MuiDialog-container.MuiDialog-scrollPaper > .MuiDialog-paperFullScreen,
+.profile__modal > div.MuiDialog-container.MuiDialog-scrollPaper > .MuiDialog-paperFullScreen {
+    border-radius: 8px;
+}
+
+.modal__errors {
+    color: #e0133e;
+    width: 100%;
+    margin-top: 0.01em;
+    font-weight: bold;
+    font-size: .8rem;
+    display: flex;
+    align-items: center;
+}
+
+.experience__modal__header, .elsewhere__modal__header, .profile__modal__header {
+    display: flex;
+    justify-content: space-between;
+    position: sticky !important;
+    align-items: center;
+    height: 3.75rem;
+    max-height: 60px;
+    padding: 9px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    background: #eff2f6;
+}
+
+.elsewhere__modal__header, .profile__modal__header {
+    height: auto;
+}
+
+.experience__modal__header > h3, .elsewhere__modal__header > h3, .profile__modal__header > h3{
+    font-size: .875rem;
+    line-height: 1.25rem;
+    font-weight: 600;
+    color: #201e27;   
+    margin: 0;
+}
+
+.experience__modal__header > .MuiSvgIcon-root, .elsewhere__modal__header > .MuiSvgIcon-root,
+.profile__modal__header > .MuiSvgIcon-root {
+    font-size: 2rem !important;
+    margin: 0;
+    color: #aaa !important;
+    cursor: pointer;
+    padding: 5px;
+    margin-right: -5px;
+    border-radius: 50px;
+    transition: all 0.2s ease-in;
+}
+
+.experience__modal__header > .MuiSvgIcon-root:hover, 
+.elsewhere__modal__header > .MuiSvgIcon-root:hover,
+.profile__modal__header > .MuiSvgIcon-root:hover {
+    background-color: #ddd;
+    transform: scale(0.9);
+}
+
+/* FORM */
+.experience__modal__form, .elsewhere__modal__form, .profile__modal__form {
+    /* padding: 1.5rem 1.5rem; */
+    padding-top: 2rem;
+    overflow-y: scroll;
+}
+
+.experience__modal__form > form, 
+.elsewhere__modal__form > form,
+.profile__modal__form > form {
+    width: 100%;
+}
+
+.experience__modal__form > form > label, 
+.elsewhere__modal__form > form > label,
+.profile__modal__form > form > label {
+    font-weight: 600;
+    color: #201e27;
+    display: block;
+    font-size: .75rem;
+    line-height: 1.6;
+    margin-bottom: 5px;
+}
+
+.experience__modal__form > form > label > span, 
+.elsewhere__modal__form > form > label > span,
+.profile__modal__form > form > label > span{
+    opacity: 0.6;
+}
+
+.experience__modal__form > form > input,
+.elsewhere__modal__form > form > input,
+.profile__modal__form > form > input {
+    font-size: .875rem;
+    margin: 0;
+    margin-bottom: 13px;
+    background: transparent;
+    color: #030303;
+    caret-color: #2dc5a1;
+    display: block;
+    height: 2.5rem;
+    line-height: 1.375rem;
+    outline: none;
+    /* padding: 0 .875rem .1em; */
+    width: 94.5%;
+    border-radius: .3125rem;
+    border: 1px solid #ddd;
+    transition: all 0.2s ease-in;
+}
+
+.experience__modal__form > form > input:disabled {
+    opacity: 0;
+    display: none;
+}
+
+.experience__modal__form > form > input:focus,
+.elsewhere__modal__form > form > input:focus,
+.profile__modal__form > form > input:focus {
+    border: 1px solid #000;
+}
+
+.experience__modal__form__checkbox {
+    display: flex;
+    align-items: center;
+    margin-top: -5px;
+}
+
+.experience__modal__form__checkbox > p {
+    font-size: .75rem;
+    font-weight: 600;
+}
+
+.mr {
+    margin-right: 5%;
+}
+
+.select__month {
+    outline: none;
+    background: rgba(255,255,255,0.4);
+    border: 1px solid #d6e0e1;
+    border-radius: .3125rem;
+    margin-bottom: .625rem;
+    position: relative;
+    width: 47.5%;
+    font-size: .875rem;
+    padding: 10px;
+    color: #788699;
+    transition: all 0.2s ease-in;
+}
+
+.select__month:disabled {
+    display: none;
+}
+
+
+.experience__button, .elsewhere__button, .profile__btn {
+    float: right;
+    margin-left: .75rem;
+    margin-top: 1.5rem;
+}
+
+.experience__button > button, .elsewhere__button > button, .profile__btn > button {
+    margin-left: .9375rem;
+    outline: none;
+    min-width: 9.0625rem;
+    padding: .625rem .75rem;
+    border-radius: .3125rem;
+    font-weight: 600;
+    font-size: .875rem;
+    height: 2.5rem;
+    cursor: pointer;
+}
+
+.experience__button > button:first-child ,
+.elsewhere__button > button:first-child,
+.profile__btn > button:first-child {
+    border: 1px solid #d6dae0;
+    color: #201e27;
+}
+
+.experience__button > button:last-child,
+.elsewhere__button > button:last-child,
+.profile__btn > button:last-child {
+    color: #fff;
+    background: #1a73e8;
+    border: none;
+}
+
+button:disabled {
+    opacity: 0.4 !important;
+    cursor: default !important ;
+  }
+
+@media(max-width: 768px) {
+    .profile__modal, .elsewhere__modal {
+        height: max-content;
+        margin: auto;
+    }
+
+    .experience__modal__form > form > label, .elsewhere__modal__form > form > label, 
+    .profile__modal__form > form > label {
+        font-size: .95rem;
+    }
+
+    .experience__modal__form::-webkit-scrollbar, .elsewhere__modal__form::-webkit-scrollbar, .profile__modal__form::-webkit-scrollbar {
+        display: none;
+    }
+    
+    .experience__modal__form, .elsewhere__modal__form, .profile__modal__form {
+        -ms-overflow-style: none;
+    }
+}
+
+@media(max-width: 540px) {
+    .experience__modal, .elsewhere__modal, .profile__modal {
+        width: 100%;
+        margin: auto;
+        height: auto;
+    }
+
+    .experience__modal > div.MuiDialog-container.MuiDialog-scrollPaper > .MuiDialog-paperFullScreen, 
+    .elsewhere__modal > div.MuiDialog-container.MuiDialog-scrollPaper > .MuiDialog-paperFullScreen,
+    .profile__modal > div.MuiDialog-container.MuiDialog-scrollPaper > .MuiDialog-paperFullScreen {
+        border-radius: 0px;
+    }
+}
+
+@media(max-width: 414px) {
+    .experience__modal__form > form > input,
+    .elsewhere__modal__form > form > input,
+    .profile__modal__form > form > input {
+        width: 92.5%;
+    }
+}

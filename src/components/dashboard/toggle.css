@@ -1,0 +1,19 @@
+.toggle {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 24px;
+  width: 30px;
+  background: transparent;
+  outline: none;
+  cursor: pointer;
+  padding: 0;
+  margin-left: 1rem;
+  margin-top: 1rem;
+  -webkit-tap-highlight-color: transparent;
+}
+.toggle-line {
+  height: 2px;
+  width: 32px;
+  background-color: rgb(7, 4, 4);
+}

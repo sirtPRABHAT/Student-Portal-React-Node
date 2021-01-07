@@ -1,0 +1,27 @@
+.projectCard {
+    height: 130px;
+    width: 105px;
+    background-color: #fff;
+    border-radius: 15px;
+    transition: all 0.2s ease-out;
+    cursor: pointer;
+    text-align: center;
+}
+
+.projectCard:hover {
+    transform: scale(1.06);
+}
+
+.projectCard > img {
+    width: 65px;
+    margin-top: 15px;
+}
+
+.projectCard > p {
+    margin-top: 10px;
+    font-size: 1rem;
+    line-height: 16px;
+    letter-spacing: -0.02em;
+    font-weight: 600;
+    color: #0f0f21;
+}
