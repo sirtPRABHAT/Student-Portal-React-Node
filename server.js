@@ -5,7 +5,7 @@ const path = require('path');
 
 console.log(__dirname)
 
-const publicPath = path.join(__dirname,  'public');
+const publicPath = path.join(__dirname,  'build');
 console.log(publicPath)
 app.use(express.static(publicPath));
 

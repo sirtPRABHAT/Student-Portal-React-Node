@@ -40,7 +40,8 @@
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "start": "react-scripts start",
+    "start": "node server.js",
+    "start:dev": "react-scripts start",
     "winbuild": "set `GENERATE_SOURCEMAP=false` && react-scripts build",
     "build": "react-scripts build",
     "test": "react-scripts test",
