@@ -14,8 +14,13 @@ app.get('*', (req, res) => {
     res.sendFile(path.join(publicPath, 'index.html'));
  });
 
+ process.on('uncaughtException', (err) => {
+    console.log('UNCAUGHT EXCEPTION! 💥 Shutting down...');
+    console.log(err.name, err.message);
+    process.exit(1);
+  });
 
-const port = 1000 || process.env.PORT;
+const port = process.env.PORT || 1000 ;
 
 app.listen(port, () => {
     console.log(`Server is up on port ${port}!`);
