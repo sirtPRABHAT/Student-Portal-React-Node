@@ -1,0 +1,235 @@
+
+body {
+	font-family: 'Roboto', sans-serif;
+	background-color: #f8f7fa;
+	color: #333;
+}
+
+.calendar {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -225px;
+	margin-left: -195px;
+	width: 360px;
+	padding: 15px;
+	box-shadow: 1px 1px 20px 0 rgba(0, 0, 0, 0.4);
+	border-radius: 12px;
+	overflow: hidden;
+}
+
+.calendar2 {
+	/* position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -225px;
+	margin-left: -195px; */
+	/* width: 300px; */
+	width: 285px;
+    padding: 15px;
+    margin: 10px;
+	/* box-shadow: 1px 1px 20px 0 rgba(0, 0, 0, 0.4); */
+	border-radius: 12px;
+    overflow: hidden;
+   
+}
+
+.calendar--nav {
+	/* margin: -15px -15px 15px; */
+	margin: -15px -15px 0px;
+	padding: 0 15px;
+	/* background-color: #1E90FF; */
+	/* color: #fff; */
+	/* height: 70px; */
+	height: 60px;
+	position: relative;
+	font-weight: bolder;
+}
+
+.calendar--nav a {
+	position: absolute;
+	cursor: pointer;
+	left: 10px;
+	font-size: 32px;
+	line-height: 1;
+	top: 16px;
+	width: 30px;
+	text-align: center;
+	display: inline-block;
+	color: rgba(255, 255, 255, 0.4);
+	user-select: none;
+}
+
+.calendar--nav a:hover {
+	color: #fff;
+}
+
+.calendar--nav a:last-child {
+	left: auto;
+	right: 10px;
+}
+
+.calendar--nav h3 {
+	 /* margin: 0;
+	position: absolute;
+	left: -80px;
+	font-family: 'Noto Sans JP', sans-serif;
+	right: 40px;
+	text-align: center;
+	cursor: pointer;
+	font-weight: 700;
+	font-size: 30px;
+	 height: 25px;
+	line-height: 66px;
+	user-select: none;  */
+
+
+	margin: 0; 
+    font-family: 'Noto Sans JP', sans-serif;
+    cursor: pointer;
+    font-weight: 700;
+    margin-left: 4px;
+    line-height: 66px;
+    -webkit-user-select: none;
+    user-select: none 
+
+}
+
+.calendar--nav small {
+	font-family: 'Noto Sans JP', sans-serif;
+	font-size: 90%;
+}
+
+.calendar--days {
+	font-size: 0;
+}
+
+.calendar--days span {
+	/* width: 14.28571%; */
+	width: 12.7%;
+	display: inline-block;
+	text-align: center;
+	user-select: none;
+	cursor: pointer;
+	/* margin: 8px 0; */
+	margin: 3px 0;
+	
+	line-height: 34px;
+	position: relative;
+	font-size: 10px;  
+	/* //16px */
+}
+
+.calendar--days span.label {
+	text-transform: uppercase;
+	font-weight: 700;
+	color: rgba(0, 0, 0, 0.3);
+	/* font-size: 14px; */
+	font-size: 11px;
+	margin: 0 2px;
+	cursor: initial;
+}
+
+.calendar--days span.active {
+	border-radius: 3px;
+	margin: 3px 2px;
+	font-size: 13px;
+	
+}
+
+
+.calendar--days span.yellow{
+	color: #DC7633;
+	background-color: #F9E79F ;
+	font-family: 'Noto Sans JP', sans-serif;
+	font-weight: 700;
+}
+
+.calendar--days span.green{
+	color: #138D75 ;
+	background-color: #ABEBC6;
+	font-family: 'Noto Sans JP', sans-serif;
+	font-weight: 700;
+}
+
+.calendar--days span.red{
+	color:#EC7063;
+	background-color: #F5B7B1;
+	font-family: 'Noto Sans JP', sans-serif;
+	font-weight: 700;
+}
+
+
+
+
+.calendar--days span.muted {
+	/* color: rgba(0, 0, 0, 0.3); */
+	color: #EBF5FB;
+	background-color: #EBF5FB;
+}
+
+.calendar--days span.between {
+	border-radius: 0;
+}
+
+
+.calendar--days span.start,  .calendar--days span.end {
+	background-color: #1E90FF;
+	color: #fff;
+}
+
+.calendar--days span.between{
+    background-color: #87CEFA;
+	color:#1E90FF;
+}
+
+.calendar--days span.start {
+	border-radius: 12px 0 0 12px; 
+	/* border-radius: 10% 52% 51% 10% / 9% 46% 54% 10%; */
+	/* background-color:  ; */
+}
+
+.calendar--days span.end {
+	border-radius: 0 12px 12px 0;
+}
+
+.calendar--days span.start.end {
+	border-radius: 12px;
+}
+
+/* :nth-child(7n) */
+
+.calendar--days span.between:after, .calendar--days span.start:after   {
+	content: "";
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 100%;
+	background-color: #87CEFA;
+	width: 20px;
+}
+
+ /* {
+	display: none;
+} */
+
+
+
+.calendar--days span.between:nth-child(7n + 1):after, .calendar--days span.end:nth-child(7n + 1):after {
+	content: "";
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 100%;
+	background-color: #87CEFA;
+	width: 20px;
+}
+
+.calendar--days span.between:nth-child(7n):after,  .calendar--days span.end:nth-child(7n + 1):after  {
+	background-color: transparent;
+}
+
+
+.calendar--days span.start.end:after {
+	display: none;
+}

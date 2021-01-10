@@ -25,7 +25,7 @@ function HomeComponent() {
   //   super(props);
   //   this.onClick = this.onClick.bind(this);
   // }
-
+ 
   // onClick() {
   //   this.setState2();
   // }

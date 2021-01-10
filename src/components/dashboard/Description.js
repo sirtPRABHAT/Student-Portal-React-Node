@@ -4,7 +4,7 @@ import "./Description.css";
 
 function Description() {
   useEffect(() => {
-    window.scrollTo(0, 0);
+    window.scrollTo(0, 0); 
   }, []);
   return (
     <div className="description__page">

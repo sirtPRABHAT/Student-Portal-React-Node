@@ -1,14 +1,19 @@
-import React from "react";
+import React, { useEffect } from "react";
 import WhatsApp from "./NewWhatsApp";
 import Projects from "./NewProjects";
 import Zoom from './Zoom';
 import Cards from './Cards';
 import './UtilityBoard.css';
 function UtilityBoard(){
+
+    useEffect(()=>{
+        window.scrollTo(0, 0);
+    }, [])
+
     return(
         <div className="utility-component">
             <div className="utility-header"/>
-            <Cards/>
+            <Cards/> 
             <Projects/>
             <div className="align-div">
             <div className="illustration1"></div>

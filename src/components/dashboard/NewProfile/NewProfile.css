@@ -129,7 +129,7 @@ input, button, textarea, select, option {
     width: 100%;
     line-height: 150%;
     z-index: 5;
-    /* top: -1.5rem; */
+    top: -0.5rem;
     color: #01a3a4;
     left: 0;
     background: white;

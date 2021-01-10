@@ -1,11 +1,12 @@
 import React from 'react';
-import './AssignmentsCards.css';
+import './ExperienceSkeleton.css';
 import Skeleton from 'react-loading-skeleton';
 
 function AssignmentsCardsSkeleton() {
     return (
-        <div className='assignmentCards__skeleton'>
+        <div className='assignment__skeleton'>
             <Skeleton height={80} width={'100%'} className='cardSkeleton_logo' />
+            <Skeleton height={20} width={'100%'} className='cardSkeleton_info' />
             <Skeleton height={20} width={'100%'} className='cardSkeleton_info' />
             {/* <Skeleton width={'65%'}/> */}
 

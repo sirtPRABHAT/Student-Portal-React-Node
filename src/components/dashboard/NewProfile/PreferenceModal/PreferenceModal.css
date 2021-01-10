@@ -75,6 +75,7 @@
 }
 
 .preference__modal__roles__role {
+    -webkit-tap-highlight-color: transparent;
     color: #788699;
     display: inline-flex;
     height: fit-content;
@@ -93,6 +94,9 @@
 .preference__modal__roles__role__selected { 
     /* for removing blue box on tapping */
     -webkit-tap-highlight-color: transparent;
+   
+    
+ 
     color: white;
     display: inline-flex;
     height: fit-content;

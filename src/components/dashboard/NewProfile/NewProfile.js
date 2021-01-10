@@ -25,10 +25,14 @@ import personal from '../../images/newProfile/personal-website.svg';
 import lineimg from '../../images/newProfile/line.png';
 import { parse } from '@fortawesome/fontawesome-svg-core';
 
+import ExperienceSkeleton from './Skeleton/ExperienceSkeleton';
+import SkeletonLoader from "tiny-skeleton-loader-react";
+
 function NewProfile(props) {
     // For Profile and exp modal opening
     const [openProfile, setOpenProfile] = useState(false);
     const [open, setOpen] = useState(false);
+    const [loading, setLoading] = useState(true);
     // For opening the modal of Preferences
     const [openRoles, setOpenRoles] = useState(false);
     const [openExp, setOpenExp] = useState(false);
@@ -105,8 +109,10 @@ function NewProfile(props) {
         if(body.experience?.length > 0){
             GetExpByUserId(body._id)
             .then(res => {
-                setAddExperience(res.data);    
-            })
+                setAddExperience(res.data); 
+                setLoading(false);   
+            }) 
+           
         }
     }, [])
 
@@ -200,13 +206,16 @@ function NewProfile(props) {
     const setExperience = ( exp ) => {
         if(selectedExp?.indexOf(exp) !== -1) {
             const data = selectedExp?.filter((e) => e !== exp);
+            
             setSelectedExp(data);
         } else {
             if(selectedExp.length < 7) {
                 selectedExp.push(exp);
+              
                 setSelectedExp([...selectedExp]);
             }
         }
+        
     }
 
     const setSkill = ( skill ) => {
@@ -222,6 +231,7 @@ function NewProfile(props) {
     }
 
     const setLocation = ( loc ) => {
+        
         if(selectedLoc?.indexOf(loc) !== -1) {
             const data = selectedLoc?.filter((l) => l !== loc);
             setSelectedLoc(data);
@@ -295,21 +305,28 @@ function NewProfile(props) {
 
                     <div className='newProfile__experience' 
                         style={{
-                            background: `${addExperience?.length > 0 && '#fff'}`
+                            background: `${ loading? '#fff': addExperience?.length > 0 && '#fff'}`
                         }}
                     >
                         <h1>EXPERIENCE</h1>
-                        {console.log(fullDescIndex)}
-                        {addExperience?.length > 0 ? (
+
+                        {console.log(loading)}
+
+                        {loading?  <ExperienceSkeleton /> : addExperience?.length > 0 ? (
                             <div className='experiences__card'>
                                 {addExperience.map((exp, index) => {
+                                    console.log(exp)
                                     let overflow = 0;
                                     let overflowBlockInd = 0;
                                     var ReadDescription;
+                                    // if(exp.description?.blocks.length > 2){
+                                    //     exp.description.blocks = exp.description.blocks.slice(0, 3)
+                                    // }
+                                    // console.log("mod", exp.description)
                                     var readBlocks = exp.description?.blocks.map((val, ind) => {
-                                        if(overflow < 200){
+                                        if(overflow < 150){
                                             overflow += val.text.length;
-                                            if(overflow >= 200){
+                                            if(overflow >= 150){
                                                 var text = val.text.slice(0,val.text.length-overflow+200) + '...'
                                                 overflowBlockInd = ind;
                                                 return {...val, text}
@@ -318,15 +335,18 @@ function NewProfile(props) {
                                             }
                                         }
                                     })
+
+                                    // if((exp.description?.blocks.length > 2  && fullDescIndex.indexOf(index) === -1) ){
+                                    //     ReadDescription = {blocks: readBlocks.slice(0, 3)}
+                                    // }else
                                 
-                                    if((exp.description?.blocks.length > 4  && fullDescIndex.indexOf(index) === -1) ){
-                                        ReadDescription = {blocks: readBlocks.slice(0, 5)}
-                                    }else if(overflow > 200 && fullDescIndex.indexOf(index) === -1 ){
+                                    if(overflow > 150 && fullDescIndex.indexOf(index) === -1 ){
                                         ReadDescription = {blocks: readBlocks.slice(0,overflowBlockInd+1)}
+                                    }else if((exp.description?.blocks.length > 2  && fullDescIndex.indexOf(index) === -1)){
+                                        ReadDescription = {blocks: readBlocks.slice(0, 3)}
                                     }else{
                                         ReadDescription = exp.description     
                                         fullDescIndex.push(index)
-                                       
                                     }
                                     return <div key={index}>
                                         <img 
@@ -341,11 +361,12 @@ function NewProfile(props) {
                                             <h4>{exp.working_remotly ? 'remote' : exp.company.location}</h4>
                                             
                                             {exp.description && Object.keys(exp.description).length > 0 ? 
-                                                <div>
+                                                <div style= {{marginBottom: '15px', marginTop: '15px'}}>
                                                     <Editor editorState={EditorState.createWithContent(convertFromRaw({...ReadDescription, entityMap: {}}))} readOnly={true} />
                                                 </div>
                                                 : 
-                                                <p>Description</p>
+                                                ''
+                                                // <p>Description</p>
                                             }
                                             { fullDescIndex.indexOf(index) === -1 ? <p className="seemore" onClick={() => {setFullDescIndex([...fullDescIndex, index]);}}>...See more</p> : null}
                                         </div>
@@ -367,7 +388,8 @@ function NewProfile(props) {
                                 <p>Stand out to recruiters by adding your past and upcoming experiences</p>
                                 <button onClick={() => setOpen(true)} className='btn'>Add Experience</button>
                             </div>                          
-                        )}
+                        )} 
+                        
                         <ExperienceModal 
                             open={open} 
                             setOpen={setOpen} 
