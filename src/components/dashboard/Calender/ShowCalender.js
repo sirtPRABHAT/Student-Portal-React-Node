@@ -13,7 +13,7 @@ import Calender from "./Calender"
 function ShowCalender() {
     const [openSignup, setOpenSignup] = useState(false)
 
-    return (
+    return ( 
 
         <div className="home__modal">
 
@@ -29,7 +29,7 @@ function ShowCalender() {
           >
             <div className="modal__container">
               
-              <div className="modal__sec2">
+              <div className="modal__sec2-calendar">
                 
 
 

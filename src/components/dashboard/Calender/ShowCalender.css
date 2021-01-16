@@ -236,8 +236,8 @@ transition: all 0.3s ease-in;
   font-weight: 400;
 }
 
-.modal__sec2 {
-  background-color: #fff;
+.modal__sec2-calendar {
+  background-color: white;
   width: 100%;
   padding: 1.5rem 0rem;
   display: flex;
@@ -248,7 +248,7 @@ transition: all 0.3s ease-in;
   overflow-y: scroll;
 }
 
-.modal__sec2 > .MuiSvgIcon-root {
+.modal__sec2-calendar > .MuiSvgIcon-root {
   position: absolute;
   font-size: 35px !important;
   color: #999 !important;
@@ -260,7 +260,7 @@ transition: all 0.3s ease-in;
   top: 1.5%;
 }
 
-.modal__sec2 > .MuiSvgIcon-root:hover {
+.modal__sec2-calendar > .MuiSvgIcon-root:hover {
   color: #000 !important;
   background-color: lightgray;
 }
@@ -635,7 +635,7 @@ transition: all 0.3s ease-in;
     padding-top: 9rem !important;
   }
 
-  .modal__sec2 > .MuiSvgIcon-root {
+  .modal__sec2-calendar > .MuiSvgIcon-root {
     right: 32% !important;
     top: 25% !important;
   }
@@ -675,7 +675,7 @@ transition: all 0.3s ease-in;
     padding-top: 9rem !important;
   }
 
-  .modal__sec2 > .MuiSvgIcon-root {
+  .modal__sec2-calendar > .MuiSvgIcon-root {
     right: 30% !important;
     top: 23% !important;
   }
@@ -726,7 +726,7 @@ transition: all 0.3s ease-in;
     margin-left: 3vw;
   }
 
-  .modal__sec2 > .MuiSvgIcon-root {
+  .modal__sec2-calendar > .MuiSvgIcon-root {
     /* margin-right: 12.5%;
     margin-top: 2.5%; */
     /* margin-left: 34vw;
@@ -780,7 +780,7 @@ transition: all 0.3s ease-in;
     /* margin-left: 2rem; */
   }
 
-  .modal__sec2 > .MuiSvgIcon-root {
+  .modal__sec2-calendar > .MuiSvgIcon-root {
     /* margin-top: 1%; */
   }
 }
@@ -817,7 +817,7 @@ transition: all 0.3s ease-in;
     margin-bottom: 0;
   }
 
-  .modal__sec2 > .MuiSvgIcon-root {
+  .modal__sec2-calendar > .MuiSvgIcon-root {
     /* top: 3.5%; */
     /* right: 2%; */
   }
@@ -858,7 +858,7 @@ transition: all 0.3s ease-in;
     /* padding-top: 1.5rem; */
   }
 
-  .modal__sec2 > .MuiSvgIcon-root {
+  .modal__sec2-calendar > .MuiSvgIcon-root {
     /* margin-top: 2%; */
   }
 }
@@ -903,7 +903,7 @@ transition: all 0.3s ease-in;
     margin-bottom: 0;
   }
 
-  .modal__sec2 > .MuiSvgIcon-root {
+  .modal__sec2-calendar > .MuiSvgIcon-root {
     top: 3%;
     right: 2%;
   }
@@ -954,7 +954,7 @@ transition: all 0.3s ease-in;
     /* padding-top: 1.5rem; */
   }
 
-  .modal__sec2 > .MuiSvgIcon-root {
+  .modal__sec2-calendar > .MuiSvgIcon-root {
     /* margin-top: 1%; */
   }
  
@@ -1000,7 +1000,7 @@ transition: all 0.3s ease-in;
     margin-bottom: 0;
   }
 
-  .modal__sec2 > .MuiSvgIcon-root {
+  .modal__sec2-calendar > .MuiSvgIcon-root {
     /* margin-top: 1%; */
   }
 
@@ -1055,7 +1055,7 @@ transition: all 0.3s ease-in;
     padding-top: 0rem;
   }
 
-  .modal__sec2 > .MuiSvgIcon-root {
+  .modal__sec2-calendar > .MuiSvgIcon-root {
     /* right: 11%; */
     /* top: 4vh; */
   }
@@ -1118,7 +1118,7 @@ transition: all 0.3s ease-in;
     left: 90%;
   }
 
-  .modal__sec2 {
+  .modal__sec2-calendar {
     height: fit-content;
     width: 90%;
     margin: 20px auto;
@@ -1149,7 +1149,7 @@ transition: all 0.3s ease-in;
     /* height: 30%; */
   }
 
-  .modal__container2 .modal__sec2 {
+  .modal__container2 .modal__sec2-calendar {
     height: fit-content;
   }
 
@@ -1192,16 +1192,14 @@ transition: all 0.3s ease-in;
     min-height: 100%;
   }
   
-  .modal__sec1, .modal__sec2 {
+  .modal__sec1, .modal__sec2-calendar {
     width: 100%;
     margin: 0 auto;
     padding: 0;
     /* height: 35%; */
   }
 
-  .modal__sec2 {
-    /* height: 100%; */
-  }
+
 
   .modal__sec1 {
     background: #fff url('../../images/homeasset/modal-mobile.png') no-repeat;
@@ -1241,7 +1239,7 @@ transition: all 0.3s ease-in;
     margin-bottom: 0px;
   }
 
-  .modal__sec2 > .MuiSvgIcon-root {
+  .modal__sec2-calendar > .MuiSvgIcon-root {
     right: 10px;
     top: 10px;
   }
@@ -1440,7 +1438,7 @@ margin-bottom: 0rem;
     }
 
     .sec1_content > p {
-      margin-top: 5%;
+      margin-top: 5%; 
     }
 }
 
