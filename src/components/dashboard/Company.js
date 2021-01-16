@@ -28,9 +28,6 @@ class Company extends React.Component {
 
   componentDidMount() {
     window.scrollTo(0, 0);
-    // if(localStorage.getItem("scholarly-filter")){
-    //   this.setState({filter: localStorage.getItem("scholarly-filter")})
-    // }
     this.nextscroll();
   }
 
@@ -78,7 +75,6 @@ class Company extends React.Component {
         var nextPageNumber =
           data.companies.length < 8 ? this.state.page : this.state.page + 1;
         var companylist = this.state.companies;
-        // console.log(data.companies.length)
         this.shuffleArray(data.companies).forEach((comp) => {
           var duplicate = false;
           if (!this.companycheck(comp)) companylist.push(comp);
@@ -113,7 +109,7 @@ class Company extends React.Component {
   render() {
     return (
       <>
-        <nav className="navbar">
+        <nav className="navbar" style={{marginTop: '0', paddingBottom:'1rem'}}>
           <h1>Companies</h1>
           <div className="location-dropdown">
             <Select
@@ -130,7 +126,7 @@ class Company extends React.Component {
           </div>
         </nav>
         <div className="main-content-container">
-          <div className="cards">
+          <div style={{marginTop: '0'}} className="cards">
             <InfiniteScroll
               dataLength={this.state.companies.length}
               next={this.nextscroll}
@@ -145,10 +141,10 @@ class Company extends React.Component {
                 {this.state.companies.length > 0 ?
                 this.state.companies.map((comp) => {
                   return (
-                    <Card key={comp._id} comp={comp} loc={this.state.filter} />
+                    <Card  key={comp._id} comp={comp} loc={this.state.filter} />
                   );
                 })
-                :
+                : 
                 [1,1,1,1,1,1,1,1,1].map(() => (
                   <div className="card-container"> 
                     <div className="details">
@@ -171,11 +167,6 @@ class Company extends React.Component {
                   </div>
                 ))}
               </div>
-              {/* {this.state.hasMore && this.state.companies.length > 0 && (
-                <p style={{ textAlign: "center" }}>
-                  <b>Loading ...</b>
-                </p>
-              )} */}
             </InfiniteScroll>
           </div>
         </div>

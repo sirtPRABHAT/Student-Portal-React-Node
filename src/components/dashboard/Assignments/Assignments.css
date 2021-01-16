@@ -6,7 +6,7 @@
     font-family: Inter;
 }
 
-.assignments__cards {
+.assignments__cards { 
     width: 86%;
     margin: auto;
     margin-left: 77px;
@@ -84,4 +84,4 @@
     .infinite-scroll-component {
         grid-template-columns: 1fr;
     }
-}
+} 
