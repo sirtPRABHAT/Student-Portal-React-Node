@@ -1141,7 +1141,7 @@
   position: relative;
   margin-left: 1rem;
   display: inline-block;
-  border: 1px solid gray;
+  border: 1px solid #d6dae0;
   background-color: white;
 border-radius: 10px;
 }
