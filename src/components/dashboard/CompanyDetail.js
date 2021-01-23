@@ -35,7 +35,7 @@ const Landing = ({ match, loc }) => {
     company_location,
   } = values;
 
-  const { loading } = values;
+  const { loading } = values; 
 
   const preload = (companyId) => {
     // const id = '5f4b9501214fb46fbcebb015';
@@ -207,7 +207,7 @@ const Landing = ({ match, loc }) => {
                         API Integration
                         </p>
 
-                        <p className='sub' style={{marginTop: '2px', fontWeight: 500, fontSize: '0.9rem'}}>
+                        <p className='sub' style={{marginTop: '5px', fontWeight: 400, fontSize: '0.9rem'}}>
                         Engineering
                         </p>               
               
@@ -221,7 +221,7 @@ const Landing = ({ match, loc }) => {
                         Full Stack Developer
                         </p>
 
-                        <p className='sub' style={{marginTop: '2px', fontWeight: 500, fontSize: '0.9rem'}}>
+                        <p className='sub' style={{marginTop: '5px', fontWeight: 400, fontSize: '0.9rem'}}>
                         Web Development
                         </p>               
               

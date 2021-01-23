@@ -1136,7 +1136,7 @@
 
 
 .box {
-  width: 40%;
+  width: 45%;
   height: 100px;
   position: relative;
   margin-left: 1rem;
@@ -1149,8 +1149,9 @@ border-radius: 10px;
 .box:hover {
 cursor: pointer;
 box-shadow: 0px 3px 3px #00000046;
-background-color: dodgerblue;
- border: 1px solid dodgerblue;
+background-image: linear-gradient(to left , #389dff,  #51a9ff );
+ border: 1px solid #389dff;
+ 
 }
 
 .box:hover > .text > .heading  {
@@ -1158,7 +1159,7 @@ background-color: dodgerblue;
 }
 
 .box:hover > .text > .sub {
-  color:#F2F3F4 ;
+  color: #D6EAF8 ;
 }
 
 .sub{
@@ -1167,9 +1168,9 @@ background-color: dodgerblue;
 
 .text {
 font-style: bold;
-font-weight: 600;
+font-weight: 500;
 position: absolute;
-top: 35%;
+top: 30%;
 left: 10%;
 margin: auto;
 }
