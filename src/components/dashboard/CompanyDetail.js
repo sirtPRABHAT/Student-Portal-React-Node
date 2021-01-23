@@ -200,6 +200,42 @@ const Landing = ({ match, loc }) => {
                         {data}
                       </p>
                     ))}
+
+                    <div class="box">
+                      <div class="text">
+                        <p className='heading' style={{marginTop: '0px', marginBottom: '0px', fontSize: '1rem'}}>
+                        API Integration
+                        </p>
+
+                        <p className='sub' style={{marginTop: '2px', fontWeight: 500, fontSize: '0.9rem'}}>
+                        Engineering
+                        </p>               
+              
+                      </div>
+                                         
+                    </div>
+
+                    <div class="box">
+                      <div class="text">
+                        <p className='heading' style={{marginTop: '0px', marginBottom: '0px', fontSize: '1rem'}}>
+                        Full Stack Developer
+                        </p>
+
+                        <p className='sub' style={{marginTop: '2px', fontWeight: 500, fontSize: '0.9rem'}}>
+                        Web Development
+                        </p>               
+              
+                      </div>
+                                         
+                    </div>
+
+
+
+
+
+
+
+
                   </div>
                 </div>
                 <br />
@@ -218,7 +254,7 @@ const Landing = ({ match, loc }) => {
                         }
                       })}
                   </div>
-                </div>
+                </div> 
               </div>
             </div>
             <div className="design__change">
