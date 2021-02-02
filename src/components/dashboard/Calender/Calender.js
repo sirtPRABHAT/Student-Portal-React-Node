@@ -12,7 +12,7 @@ function randomInteger(min, max) {
 const Heading = ({date, changeMonth, resetDate}) => (
     <nav className="calendar--nav">
       {/* <a onClick={() => changeMonth(date.month() - 1)}>&#8249;</a> */}
-      <h3 onClick={() => console.log('reset disabled')}>{date.format('MMMM')} <small>{date.format('YYYY')}</small></h3>
+      <h3 style= {{fontFamily: "Inter"}} onClick={() => console.log('reset disabled')}>{date.format('MMMM')} <small style= {{fontFamily: "Inter"}}>{date.format('YYYY')}</small></h3>
       {/* <a onClick={() => changeMonth(date.month() + 1)}>&#8250;</a> */}
     </nav>
   );
@@ -51,7 +51,7 @@ const Heading = ({date, changeMonth, resetDate}) => (
   
     return (
      
-        <span onClick={() => onClick(date)} currentDate={date} className={className.join(' ')}>{date.date()}</span>
+        <span style= {{fontFamily: "Inter", fontWeight: "500"}} onClick={() => onClick(date)} currentDate={date} className={className.join(' ')}>{date.date()}</span>
       
       
     )

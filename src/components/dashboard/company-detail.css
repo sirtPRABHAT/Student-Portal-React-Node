@@ -177,7 +177,7 @@
   /* margin: 15px; */
   margin: 5px;
   display: flex;
-  padding: 20px;
+  padding: 20px 20px 20px 13px;
   border-radius: 20px;
 }
 .company__title {
@@ -1137,10 +1137,11 @@
 
 .box {
   width: 45%;
-  height: 100px;
+  height: 65px;
   position: relative;
   margin-left: 1rem;
   display: inline-block;
+  margin-bottom: 25px;
   border: 1px solid #d6dae0;
   background-color: white;
 border-radius: 10px;
@@ -1148,18 +1149,18 @@ border-radius: 10px;
 
 .box:hover {
 cursor: pointer;
-box-shadow: 0px 3px 3px #00000046;
-background-image: linear-gradient(to left , #389dff,  #51a9ff );
- border: 1px solid #389dff;
+box-shadow: 0px 2px 5px #0000002c;
+background-image: linear-gradient(to left , white, white );
+ border: 1px solid  #d6dae0;
  
 }
 
 .box:hover > .text > .heading  {
-  color: white;
+  /* color: white; */
 }
 
 .box:hover > .text > .sub {
-  color: #D6EAF8 ;
+  /* color: #D6EAF8 ; */
 }
 
 .sub{
@@ -1170,7 +1171,117 @@ background-image: linear-gradient(to left , #389dff,  #51a9ff );
 font-style: bold;
 font-weight: 500;
 position: absolute;
-top: 30%;
+top: 20%;
 left: 10%;
 margin: auto;
+}
+
+
+.hallo-container{
+  display: inline-block;
+  flex-direction: column;
+  margin-left: 30px;
+  width: 32%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content; 
+  height: fit-content; 
+   margin-top: 20px;
+  height: fit-content;
+
+}
+
+
+.apply-container{
+
+  border-radius: 8px;
+  flex: 0 0 100%;
+  display: flex;
+  align-items: flex-start;
+  place-content: flex-start;
+  -webkit-box-pack: start;
+  flex-wrap: wrap;
+  border-radius: 8px;
+  background: rgb(254, 248, 244); 
+}
+
+.apply-container  .apply-container-header{
+  flex: 1 1 100%;
+    border-radius: 8px;
+    background: rgb(252, 227, 213);
+    display: flex;
+    overflow: hidden;
+}
+
+.apply-container  .apply-container-header .apply-container-header-image{
+  background-image: url("https://cdn.hallothere.io/icons/apply.svg");
+  flex: 1 1 100%;
+    height: 136px;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.apply-container label{
+  flex: 1 1 100%;
+    margin: 16px 24px 1px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    font-family: 'Inter';
+    color: rgb(35, 30, 33);
+}
+
+.apply-container p{
+  margin: 0px 24px 10px;
+    font-size: 15px;
+    line-height: 24px;
+    font-family: 'Inter';
+    color: rgb(35, 30, 33);
+}
+
+
+.apply-container button {
+  margin: 0px 24px 24px;
+    padding: 0px 18px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    place-content: center;
+    -webkit-box-pack: center;
+    text-transform: none;
+    background: rgb(222, 82, 9);
+    border-radius: 4px;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 500;
+    height: 36px;
+    font-family: 'Inter';
+    color: white;
+}
+
+.uk-button{
+  margin: 0;
+  border: none;
+  overflow: visible;
+  font: inherit;
+  color: inherit;
+  text-transform: none;
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 0 30px;
+  vertical-align: middle;
+  font-size: .875rem;
+  line-height: 38px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: .1s ease-in-out;
+  transition-property: color,background-color,border-color;
+}
+
+
+.btn-view-more {
+  display: inline-block;
+  padding-left: 20px;
+  margin: 0 auto 40px;
 }

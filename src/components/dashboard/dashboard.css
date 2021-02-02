@@ -1,8 +1,9 @@
 .dash-container {
   width: 85%;
   min-height: auto;
-  max-height: 100vh;
+  max-height: 1150px;
   float: right;
+  background-color: white;
   
   /* display: grid;
   grid-template-columns: 1fr 4.85fr;

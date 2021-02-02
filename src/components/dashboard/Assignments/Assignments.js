@@ -111,7 +111,7 @@ function Assignments() {
 
     return (
         <div className='assignments'>
-            {windowSize > 540 ? (
+            {windowSize > 300 ? (
                 <>       
                 <ul className='assignments__cards'>
                     {data.slice(initial, limit).map((card, ind) => loading ? <li><AssignmentsCardsSkeleton /></li> : (

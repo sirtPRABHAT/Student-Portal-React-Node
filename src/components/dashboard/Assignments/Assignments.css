@@ -1,4 +1,4 @@
-.assignments {
+/* .assignments {
     background-color: #f8f8f8;
     padding: 20px;
     margin-top: 198px;
@@ -84,4 +84,144 @@
     .infinite-scroll-component {
         grid-template-columns: 1fr;
     }
-} 
+}  */
+
+
+
+
+.assignments {
+    background-color: #f8f8f8;
+    padding: 20px;
+    min-height: 65vh;
+    margin-top: 198px;
+    font-family: Inter;
+}
+
+.assignments__cards {
+    width: 86%;
+    margin: auto;
+    margin-left: 77px;
+    margin-top: -80px;
+    display: grid;
+    place-items: center;
+    grid-row-gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    list-style: none;
+}
+
+.pagination {
+    width: max-content;
+    margin: auto;
+    margin-top: 1rem;
+}
+
+/* FOR MOBILE */
+.assignments__mobile {
+    background-color: #f8f8f8;
+    padding: 20px 0px;
+    margin-top: 40px;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.assignments__mobile__container {
+    padding: 0 10px;
+}
+
+.assignments__mobile__cards > h3 {
+    margin: 0;
+    margin-bottom: .5rem;
+    margin-top: 1.8rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-left: 5px;
+}
+
+.assignments__mobile__cards > h3 {
+}
+
+.assignments__mobile__cardsFlex {
+    display: flex;
+    overflow: hidden;
+    overflow-x: scroll;
+}
+
+.assignments__mobile__cardsFlex .assignmentCards {
+    margin-right: 20px;
+    min-width: 230px;
+    min-height: 140px;
+}
+
+@media(min-height: 700px ) {
+    .assignments {
+        min-height: 75vh;
+    }
+}
+
+@media(max-height: 800px) and (min-height: 701px) {
+    .assignments {
+        min-height: 70vh;
+    }
+}
+
+@media(min-height: 970px ) {
+    .assignments {
+        min-height: 80vh;
+    }
+}
+
+@media(min-height: 1214px ) {
+    .assignments {
+        min-height: 85vh;
+    }
+}
+
+@media(max-width: 1300px) {
+    /* .assignments {
+        min-height: 80vh;
+    } */
+
+    .assignments__cards {
+        width: 95%;
+        margin-left: auto;
+        padding: 0px;
+    }
+}
+
+@media(max-width: 900px) {
+    .assignments__cards {
+        grid-template-columns: repeat(3, 1fr);
+        width: 95%;
+    }
+}
+
+@media(max-width: 780px) {
+    .assignments__cards {
+        width: 100%;
+    }
+}
+
+@media(max-width: 768px) {
+    .assignments {
+        min-height: 75vh;
+    }
+}
+
+@media(max-width: 720px) {
+    .assignments__cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(max-width: 600px) {
+    .assignments {
+        margin-bottom: -10px;
+    }
+}
+
+@media(max-width: 414px) {
+    .assignments__mobile__cardsFlex .assignmentCards{
+        min-width: 280px;
+        min-height: 160px;
+    }
+}

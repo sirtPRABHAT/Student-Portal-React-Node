@@ -201,7 +201,7 @@ const Landing = ({ match, loc }) => {
                       </p>
                     ))}
 
-                    <div class="box">
+                    {/* <div class="box">
                       <div class="text">
                         <p className='heading' style={{marginTop: '0px', marginBottom: '0px', fontSize: '1rem'}}>
                         API Integration
@@ -213,9 +213,9 @@ const Landing = ({ match, loc }) => {
               
                       </div>
                                          
-                    </div>
+                    </div> */}
 
-                    <div class="box">
+                    {/* <div class="box">
                       <div class="text">
                         <p className='heading' style={{marginTop: '0px', marginBottom: '0px', fontSize: '1rem'}}>
                         Full Stack Developer
@@ -228,15 +228,15 @@ const Landing = ({ match, loc }) => {
                       </div>
                                          
                     </div>
-
-
-
-
-
-
-
-
+                */}
                   </div>
+
+                  <div className="btn-view-more">
+                        <button className="profile__button" onClick={addPopup}>
+                          View more
+                        </button>
+                      </div>
+
                 </div>
                 <br />
 
@@ -255,13 +255,42 @@ const Landing = ({ match, loc }) => {
                       })}
                   </div>
                 </div> 
+
+                
+
+                <div className="hallo-container">
+
+                          <div className="apply-container">
+
+                              <div className= "apply-container-header">
+                                <div className="apply-container-header-image"></div>
+                              </div>
+
+                              <label>
+                                <div>Interested in a </div>
+
+                                <div>Career at</div>
+
+                                <div>Awesomely </div>
+
+                                <div>authentic ?</div>                             
+                              </label>
+                          
+                              <p>Click here to let the team know.</p>
+
+                              <button className="uk-button false">View More</button>
+                      
+                          </div> 
+
+                      </div>
+
+                     
+              
+              
+        
               </div>
             </div>
-            <div className="design__change">
-              <button className="profile__button" onClick={addPopup}>
-                View more
-              </button>
-            </div>
+            
           </section>
         </div>
       );

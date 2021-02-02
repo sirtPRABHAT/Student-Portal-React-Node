@@ -133,28 +133,28 @@ body {
 .calendar--days span.active {
 	border-radius: 3px;
 	margin: 3px 2px;
-	font-size: 13px;
+	font-size: 17px;
 	
 }
 
 
 .calendar--days span.yellow{
-	color: #DC7633;
-	background-color: #F9E79F ;
+	color: #988900;
+	background-color: #FFEB9B;
 	font-family: 'Noto Sans JP', sans-serif;
 	font-weight: 700;
 }
 
 .calendar--days span.green{
-	color: #138D75 ;
-	background-color: #ABEBC6;
+	color: #006C0B;
+	background-color: #9FE8D1;
 	font-family: 'Noto Sans JP', sans-serif;
 	font-weight: 700;
 }
 
 .calendar--days span.red{
-	color:#EC7063;
-	background-color: #F5B7B1;
+	color:#820000;
+	background-color: #FFC0B7;
 	font-family: 'Noto Sans JP', sans-serif;
 	font-weight: 700;
 }
